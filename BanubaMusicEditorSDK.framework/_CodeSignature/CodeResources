@@ -6,43 +6,51 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Lyi8A/vPQybX2r+gmQsnsoJjYqY=
+		tfVYZJh2woMsTIrb81GKJJ5Jb6A=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib/objects-12.3+.nib</key>
 		<data>
-		8ab/fmqlnZU2uCf7+JEaXds8nM4=
+		b0wacOw1aJQHz9gr5LHNy3mLjxw=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib/runtime.nib</key>
 		<data>
-		YKPPDj4f+XGkPLSXfsqCbdsU7BY=
+		P2QgI7YZ3udAZ93l9K7EF+Yy0uY=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/DBC-5T-daX-view-sLy-RQ-lTd.nib/objects-12.3+.nib</key>
 		<data>
-		ieu1Sfu82DIXL53xBIQ5K9HvEW0=
+		dYEgNbKoO1u91vWbdTmWZlhO+WA=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/DBC-5T-daX-view-sLy-RQ-lTd.nib/runtime.nib</key>
 		<data>
-		ZvvJidpXYK2Gifr2/nLZKU9wZsY=
+		TSok/WoXcMiZcIi/EbZf39QczDE=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/Info.plist</key>
 		<data>
 		XbUWFGlFhODYWSYkqohUimcRYhc=
 		</data>
-		<key>AudioTrackLineEditViewController.storyboardc/AudioTrackLineEditViewController.nib</key>
+		<key>AudioTrackLineEditViewController.storyboardc/AudioTrackLineEditViewController.nib/objects-12.3+.nib</key>
 		<data>
-		H6rfWNNKSxzjgqfn28FywijTD0g=
+		aKz70ZDknHCarYO6vMlASTba58Y=
+		</data>
+		<key>AudioTrackLineEditViewController.storyboardc/AudioTrackLineEditViewController.nib/runtime.nib</key>
+		<data>
+		2BigfQ1kEzr+7ni2cAqBf6sTU48=
 		</data>
 		<key>AudioTrackLineEditViewController.storyboardc/Info.plist</key>
 		<data>
 		N5sgHo4RX5tfqBhq3fEQ42idQ/c=
 		</data>
-		<key>AudioTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib</key>
+		<key>AudioTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib/objects-12.3+.nib</key>
 		<data>
-		JWBI9uHt2wDix3j/m1NlwMK7Jyg=
+		YrV6HdpeQj1acif5NXbSNyHSnpI=
+		</data>
+		<key>AudioTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib/runtime.nib</key>
+		<data>
+		JVA+dmRANcpcIFJbwuS73wxADv0=
 		</data>
 		<key>Headers/BanubaMusicEditorSDK-Swift.h</key>
 		<data>
-		1tdg/kVzjgoh9HgSpsjo8G9X1lI=
+		5f9OKCDKQcs6ntTPtSTXaehJi+Q=
 		</data>
 		<key>Headers/BanubaMusicEditorSDK.h</key>
 		<data>
@@ -50,15 +58,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+ZOZM06luYBrwb4WYfLrTK3VUBc=
+		mLIQFYVFakRs2hm0WVVA4r+ktPI=
 		</data>
 		<key>MainMusicViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-12.3+.nib</key>
 		<data>
-		3Sxzq9BgS7KC8qy3jtscCF2ffs4=
+		vJxpUFQhCdHeDohIRir4pNFWuRY=
 		</data>
 		<key>MainMusicViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
 		<data>
-		1DcPA69jjZ/mvQuMwIxqZBsslIU=
+		utasQrNJX55VDcI52arn/Mw7VP4=
 		</data>
 		<key>MainMusicViewController.storyboardc/Info.plist</key>
 		<data>
@@ -66,35 +74,43 @@
 		</data>
 		<key>MainMusicViewController.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-12.3+.nib</key>
 		<data>
-		sFcnZkW0Gl4WnpG/uH/BEEwVmBc=
+		d6zWOE4/S7lutNcTkeYqk28s+Io=
 		</data>
 		<key>MainMusicViewController.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib</key>
 		<data>
-		mXF0zMXLIyBvnIzp7jfpQEVmg0k=
+		RFH+dl1eAH5AHsaJ38s9ypONNr4=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		9TXEk6azwvm334Ci/RHUk35suKQ=
+		3+hKHIM9Ym2wisX9ExPaaQF9Ss8=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		9TXEk6azwvm334Ci/RHUk35suKQ=
+		3+hKHIM9Ym2wisX9ExPaaQF9Ss8=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		mOM8xDHruG1eYRcUZZthfxUgRyk=
+		edQ/ZUhY7JslGsLO6ZoF8l44WWk=
+		</data>
+		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		xzY+gGJNYbtQ2ADO0ZEL9lweykw=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		47a4nKgha9+SOdOVd7jCIs8OpWw=
+		u37y9jezUQfkMFW1eI/DBDxW9F8=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		mOM8xDHruG1eYRcUZZthfxUgRyk=
+		edQ/ZUhY7JslGsLO6ZoF8l44WWk=
+		</data>
+		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftinterface</key>
+		<data>
+		xzY+gGJNYbtQ2ADO0ZEL9lweykw=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		47a4nKgha9+SOdOVd7jCIs8OpWw=
+		u37y9jezUQfkMFW1eI/DBDxW9F8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,11 +122,11 @@
 		</data>
 		<key>VideoTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib</key>
 		<data>
-		0+VOxZB1XXkoKUuL3IdLiEJA0aQ=
+		x2gzoF+QRnq4BWbSXmDawgfNcd0=
 		</data>
 		<key>VideoTrackLineEditViewController.storyboardc/VideoTrackLineEditViewController.nib</key>
 		<data>
-		fdzG2yjSEYjkOfPgYfTtWZrBhew=
+		j05Ei7i1HB6DmTBpbyvXiOd5Gng=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -119,35 +135,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B0GLi74mQb4RlghfQ4L1U+63yDh3xdcp2L6bYeAPyJ8=
+			ijFLhVvPqpD4A/DZ/ZN+LLaXQic8ioHoXxN+4+JGNTo=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WIVHeJLxVJGJ/Tawiq+UahmIRlq4z38GdEE0hdOtAtM=
+			VOuzExZRsUegeeeAnK5XsLiSbHEanxYWozYOecvEnKo=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tpGOHDXGnnv1HsS6TGmicvWeN6JVozjE42QAs0SsGEc=
+			i9e/MHnYZfF/CydlWNhJ0j2vjG3MPkU9/AKk3dzT6hg=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/DBC-5T-daX-view-sLy-RQ-lTd.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6RV+PU0sRHhaV5WpIkagZYrJQpHFsCr9umcI1yz3UXw=
+			z0rvEdi65ZSt8pUfonN1TxR68xVH1jkIrvbpz4cdlrQ=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/DBC-5T-daX-view-sLy-RQ-lTd.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nFP+pjNakMsLSVaYi71lyRKDLm02Hm1wUhsi7txjrWI=
+			g6OfNE3ri6lkGCYUWvLPHiRx8agYoIoysvEe7EAILVg=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/Info.plist</key>
@@ -157,11 +173,18 @@
 			7pYoKTNURV88Vq5Z+KSb1urgV/hw4A49WJzCdFRbYAo=
 			</data>
 		</dict>
-		<key>AudioTrackLineEditViewController.storyboardc/AudioTrackLineEditViewController.nib</key>
+		<key>AudioTrackLineEditViewController.storyboardc/AudioTrackLineEditViewController.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qLV9sT6E6TRD+lwXfKpFD6BRknZbV6NnrKQPQY6vUIc=
+			P0DZ7YxzDoKE+D0lcLnBTWNS6ZXAz1J/WRoVeYKIu0Q=
+			</data>
+		</dict>
+		<key>AudioTrackLineEditViewController.storyboardc/AudioTrackLineEditViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bi1+f8RpEhDa+mg3zJhqFjiUxYDEQ+W3l46Qa+PnXtQ=
 			</data>
 		</dict>
 		<key>AudioTrackLineEditViewController.storyboardc/Info.plist</key>
@@ -171,18 +194,25 @@
 			36aNl0OceW2wzyCUNpl9cMTYoc5oVPeeLk3SQ9pX4Os=
 			</data>
 		</dict>
-		<key>AudioTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib</key>
+		<key>AudioTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n8NIi6lCp8wAT9KB3ygOfsextIbvmJCJryQd4qNbUoA=
+			2os0zbzCaqPLBDt9fDVXbJqPD9jWGmCSK1C0nmt9G5M=
+			</data>
+		</dict>
+		<key>AudioTrackLineEditViewController.storyboardc/UcE-0E-Uae-view-iNs-om-7Nd.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RI1dCZ1JuuBromCFOOe/T+8n2W8ZRz3RhdUJtPgXCxs=
 			</data>
 		</dict>
 		<key>Headers/BanubaMusicEditorSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O+F56mYLvwjnD94chlV2ejpNbdha0ljxHQgG+nzt0W8=
+			9658vz1/GEZXjZInIgUcT2OKwuzKogCdgm9kQLUm1Pg=
 			</data>
 		</dict>
 		<key>Headers/BanubaMusicEditorSDK.h</key>
@@ -196,14 +226,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oc6Gp0GArpcR8mqbic9+7tgLRzw5QHS1uFKLR9rJCM8=
+			aiiSJdtBYqyxIA26qRlF8VU+kNYFr5Z4GCvOegpzabM=
 			</data>
 		</dict>
 		<key>MainMusicViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uqhIRzPCY4jPzDBV/ZOGRBPZK8GArCFJGx7NTDXvHXE=
+			T+7nIF/lR4zHmoWySdz94RzwRthQtVtSaBXx0Gn3s2A=
 			</data>
 		</dict>
 		<key>MainMusicViewController.storyboardc/Info.plist</key>
@@ -217,56 +247,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nT/y8Vv1xlv/U5nUjU9htA24M2GY6jOg2K6g5KJhQSE=
+			PYZL0s1vBuCq7l9XXnBcfylmu1hUD4BRPQPC2bNrLl0=
 			</data>
 		</dict>
 		<key>MainMusicViewController.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bG67QyE24G/9xkKB0dxhGhJT4ekfjCkFYBQ+b1Mkoo4=
+			h+iar8VZHamlV3HcTq25QaxcKink5KVf/Sfzxfty4t4=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IbSK/60dH938H7h3n6KfqWJVx0dBGYTu8y7qIHwfDKw=
+			ZWClDSLlWD6i0/uCyVpd0wD9ikGH3pMrn45mi/U7MXk=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IbSK/60dH938H7h3n6KfqWJVx0dBGYTu8y7qIHwfDKw=
+			ZWClDSLlWD6i0/uCyVpd0wD9ikGH3pMrn45mi/U7MXk=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YrMrSzSoStbnV/zShe2fxqmC9brxYr88rTrWxVFQ7h4=
+			mM4IPlXDxlNg49Di3SpS7Z7uEM/ZxRiF297VUX+JAQE=
+			</data>
+		</dict>
+		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DmNgt3N9mIk/bPx1w+hv27xzwRrKOKvXHa7IJ6wsFak=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n3lnwdxCZgg0Bu3KQ40W8B263rv6NW+Sea4lmd4gpa0=
+			zXqxdqUh56ow4YSftW2SQ688+mcDsrZ1zk6/SHa2aok=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YrMrSzSoStbnV/zShe2fxqmC9brxYr88rTrWxVFQ7h4=
+			mM4IPlXDxlNg49Di3SpS7Z7uEM/ZxRiF297VUX+JAQE=
+			</data>
+		</dict>
+		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DmNgt3N9mIk/bPx1w+hv27xzwRrKOKvXHa7IJ6wsFak=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n3lnwdxCZgg0Bu3KQ40W8B263rv6NW+Sea4lmd4gpa0=
+			zXqxdqUh56ow4YSftW2SQ688+mcDsrZ1zk6/SHa2aok=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -287,14 +331,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIfNm8DaPYdseaWvwSkNvqW1HFSH72d//MfNiIJkees=
+			Zynizr4SqjLgXQQ7/S7dMCe0Jb/WKxrSe0eu6BLenN4=
 			</data>
 		</dict>
 		<key>VideoTrackLineEditViewController.storyboardc/VideoTrackLineEditViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3UqMdzJepyU5FVVQRprncQ6DTnBj7oCpcRXnhVq+J2U=
+			8vsy4I3JHDefQH9tPOJYb521ihVj1SLL6NvtJiMru6U=
 			</data>
 		</dict>
 	</dict>
