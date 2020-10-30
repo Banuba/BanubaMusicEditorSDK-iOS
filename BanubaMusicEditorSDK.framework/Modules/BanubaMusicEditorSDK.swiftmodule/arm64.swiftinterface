@@ -12,6 +12,8 @@ public protocol BanubaMusicEditorSDKDelegate : AnyObject {
   func banubaMusicEditorSDKDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditorSDK)
   func banubaMusicEditorSDKNeedsToUpdatePlayer(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditorSDK)
   func banubaMusicEditorSDK(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditorSDK, didPresent message: Swift.String)
+  func banubaMusicEditorSDK(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditorSDK, needsMicrophoneAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
+  func banubaMusicEditorSDK(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditorSDK, needsCameraAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
 }
 public class BanubaMusicEditorSDK {
   weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorSDKDelegate?
@@ -21,8 +23,8 @@ public class BanubaMusicEditorSDK {
   public func dismissMusicEditor(animated: Swift.Bool, completion: (() -> Swift.Void)?)
   @objc deinit
 }
-public protocol AudioEqualizerFilterProvider {
-  func provideFilters() -> [BanubaMusicEditorSDK.AudioEqualizerFilter]
+public protocol VoiceFilterProvider {
+  func provideFilters() -> [BanubaMusicEditorSDK.VoiceFilter]
 }
 public enum AVAudioEngineUnit {
   case timePitch
@@ -48,14 +50,14 @@ public enum AVAudioEngineUnitParameter {
 }
 public typealias AVAudioEngineUnitSettings = [BanubaMusicEditorSDK.AVAudioEngineUnitParameter : Swift.Float]
 public typealias AVAudioEngineFilterSetting = [BanubaMusicEditorSDK.AVAudioEngineUnit : BanubaMusicEditorSDK.AVAudioEngineUnitSettings]
-public struct AudioEqualizerFilter : Swift.Identifiable, Swift.Equatable {
+public struct VoiceFilter : Swift.Identifiable, Swift.Equatable {
   public var id: Swift.Int
-  public let title: Swift.String
+  public let title: Swift.String?
   public let color: UIKit.UIColor
   public let image: UIKit.UIImage?
   public let settings: BanubaMusicEditorSDK.AVAudioEngineFilterSetting
-  public init(id: Swift.Int, title: Swift.String, color: UIKit.UIColor, image: UIKit.UIImage?, settings: BanubaMusicEditorSDK.AVAudioEngineFilterSetting)
-  public static func == (lhs: BanubaMusicEditorSDK.AudioEqualizerFilter, rhs: BanubaMusicEditorSDK.AudioEqualizerFilter) -> Swift.Bool
+  public init(id: Swift.Int, title: Swift.String?, color: UIKit.UIColor, image: UIKit.UIImage?, settings: BanubaMusicEditorSDK.AVAudioEngineFilterSetting)
+  public static func == (lhs: BanubaMusicEditorSDK.VoiceFilter, rhs: BanubaMusicEditorSDK.VoiceFilter) -> Swift.Bool
   public typealias ID = Swift.Int
 }
 public protocol AudioWriterAdoptableDelegate : AnyObject {
@@ -130,7 +132,9 @@ public protocol PlayerAdoptable : AnyObject {
   var videoDurationCMTime: CoreMedia.CMTime { get }
   var isPlaying: Swift.Bool { get }
   var playerItem: AVFoundation.AVPlayerItem? { get }
+  var audioMix: AVFoundation.AVAudioMix? { get set }
   var avPlayer: AVFoundation.AVPlayer { get }
+  var isMuted: Swift.Bool { get set }
 }
 public protocol VideoEditorServiceAdoptable : AnyObject {
   var isMultiAudioEnabled: Swift.Bool { get }
@@ -223,9 +227,9 @@ public struct AudioTrackLineEditViewControllerConfig {
   public var draggerLinesSpacing: CoreGraphics.CGFloat
   public var draggersLineCornerRadius: CoreGraphics.CGFloat
   public var backgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
-  public var equalizerItemConfiguration: BanubaMusicEditorSDK.EqualizerItemConfiguration?
-  public var equalizerFilterProvider: BanubaMusicEditorSDK.AudioEqualizerFilterProvider?
-  public var isEqualizerHidden: Swift.Bool {
+  public var voiceFilterConfiguration: BanubaMusicEditorSDK.VoiceFilterConfiguration?
+  public var voiceFilterProvider: BanubaMusicEditorSDK.VoiceFilterProvider?
+  public var isVoiceFilterHidden: Swift.Bool {
     get
   }
 }
@@ -295,7 +299,7 @@ public struct MusicEditor {
     public var color: UIKit.UIColor
   }
 }
-public struct EqualizerItemConfiguration {
+public struct VoiceFilterConfiguration {
   public var cornerRadius: CoreGraphics.CGFloat
   public var imageCornerRadius: CoreGraphics.CGFloat
   public var imageEdgeInsets: UIKit.UIEdgeInsets
@@ -303,7 +307,9 @@ public struct EqualizerItemConfiguration {
   public var selectionColor: UIKit.UIColor
   public var font: UIKit.UIFont
   public var textColor: UIKit.UIColor
-  public init(cornerRadius: CoreGraphics.CGFloat, imageCornerRadius: CoreGraphics.CGFloat, imageEdgeInsets: UIKit.UIEdgeInsets, selectionBorderWidth: CoreGraphics.CGFloat, selectionColor: UIKit.UIColor, font: UIKit.UIFont, textColor: UIKit.UIColor)
+  public var noneFilterTitle: Swift.String?
+  public var noneFilterImageName: Swift.String
+  public init(cornerRadius: CoreGraphics.CGFloat, imageCornerRadius: CoreGraphics.CGFloat, imageEdgeInsets: UIKit.UIEdgeInsets, selectionBorderWidth: CoreGraphics.CGFloat, selectionColor: UIKit.UIColor, font: UIKit.UIFont, textColor: UIKit.UIColor, noneFilterTitle: Swift.String?, noneFilterImageName: Swift.String)
 }
 public enum AudioTrackLinePosition : Swift.Int, Swift.CaseIterable {
   case first
