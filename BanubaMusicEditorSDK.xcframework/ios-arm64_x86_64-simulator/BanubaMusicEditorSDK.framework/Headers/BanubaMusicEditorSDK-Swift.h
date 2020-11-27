@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -208,6 +209,51 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@protocol EffectSelectionViewControllerDelegate;
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK29EffectSelectionViewController_")
+@protocol EffectSelectionViewController
+@property (nonatomic, strong) id <EffectSelectionViewControllerDelegate> _Nullable delegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK37EffectSelectionViewControllerDelegate_")
+@protocol EffectSelectionViewControllerDelegate
+- (void)effectSelectionViewControllerWithViewController:(id <EffectSelectionViewController> _Nonnull)viewController didSelectFile:(NSURL * _Nonnull)url title:(NSString * _Nonnull)title id:(int64_t)id;
+- (void)effectSelectionViewControllerDidCancelWithViewController:(id <EffectSelectionViewController> _Nonnull)viewController;
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK34MusicEditorCountdownAnimatableView_")
+@protocol MusicEditorCountdownAnimatableView
+@property (nonatomic) NSInteger countdownDigit;
+- (void)startWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)stop;
+@end
+
+@protocol TrackSelectionViewController;
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK40MusicEditorExternalViewControllerFactory_")
+@protocol MusicEditorExternalViewControllerFactory
+- (id <TrackSelectionViewController> _Nullable)makeTrackSelectionViewController SWIFT_WARN_UNUSED_RESULT;
+- (id <EffectSelectionViewController> _Nullable)makeEffectSelectionViewController SWIFT_WARN_UNUSED_RESULT;
+- (id <MusicEditorCountdownAnimatableView> _Nullable)makeRecorderCountdownAnimatableView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@protocol TrackSelectionViewControllerDelegate;
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK28TrackSelectionViewController_")
+@protocol TrackSelectionViewController
+@property (nonatomic, strong) id <TrackSelectionViewControllerDelegate> _Nullable delegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegate_")
+@protocol TrackSelectionViewControllerDelegate
+- (void)trackSelectionViewControllerWithViewController:(id <TrackSelectionViewController> _Nonnull)viewController didSelectFile:(NSURL * _Nonnull)url title:(NSString * _Nonnull)title id:(int64_t)id;
+- (void)trackSelectionViewControllerDidCancelWithViewController:(id <TrackSelectionViewController> _Nonnull)viewController;
+@end
 
 
 
@@ -408,6 +454,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -426,6 +473,51 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
+@protocol EffectSelectionViewControllerDelegate;
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK29EffectSelectionViewController_")
+@protocol EffectSelectionViewController
+@property (nonatomic, strong) id <EffectSelectionViewControllerDelegate> _Nullable delegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK37EffectSelectionViewControllerDelegate_")
+@protocol EffectSelectionViewControllerDelegate
+- (void)effectSelectionViewControllerWithViewController:(id <EffectSelectionViewController> _Nonnull)viewController didSelectFile:(NSURL * _Nonnull)url title:(NSString * _Nonnull)title id:(int64_t)id;
+- (void)effectSelectionViewControllerDidCancelWithViewController:(id <EffectSelectionViewController> _Nonnull)viewController;
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK34MusicEditorCountdownAnimatableView_")
+@protocol MusicEditorCountdownAnimatableView
+@property (nonatomic) NSInteger countdownDigit;
+- (void)startWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)stop;
+@end
+
+@protocol TrackSelectionViewController;
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK40MusicEditorExternalViewControllerFactory_")
+@protocol MusicEditorExternalViewControllerFactory
+- (id <TrackSelectionViewController> _Nullable)makeTrackSelectionViewController SWIFT_WARN_UNUSED_RESULT;
+- (id <EffectSelectionViewController> _Nullable)makeEffectSelectionViewController SWIFT_WARN_UNUSED_RESULT;
+- (id <MusicEditorCountdownAnimatableView> _Nullable)makeRecorderCountdownAnimatableView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@protocol TrackSelectionViewControllerDelegate;
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK28TrackSelectionViewController_")
+@protocol TrackSelectionViewController
+@property (nonatomic, strong) id <TrackSelectionViewControllerDelegate> _Nullable delegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegate_")
+@protocol TrackSelectionViewControllerDelegate
+- (void)trackSelectionViewControllerWithViewController:(id <TrackSelectionViewController> _Nonnull)viewController didSelectFile:(NSURL * _Nonnull)url title:(NSString * _Nonnull)title id:(int64_t)id;
+- (void)trackSelectionViewControllerDidCancelWithViewController:(id <TrackSelectionViewController> _Nonnull)viewController;
+@end
 
 
 
