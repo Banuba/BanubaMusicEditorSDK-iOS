@@ -7,22 +7,6 @@ import CoreGraphics
 import Foundation
 import Swift
 import UIKit
-public protocol BanubaMusicEditorDelegate : AnyObject {
-  func banubaMusicEditorDidDone(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
-  func banubaMusicEditorDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor)
-  func banubaMusicEditorNeedsToUpdatePlayer(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor)
-  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, didPresent message: Swift.String)
-  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, needsMicrophoneAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
-  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, needsCameraAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
-}
-public class BanubaMusicEditor {
-  weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorDelegate?
-  public init(audioEditorService: BanubaMusicEditorSDK.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaMusicEditorSDK.TimeLineDataSourceAdoptable, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: BanubaMusicEditorSDK.PlayablePreview, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
-  public func updatePreviewPlayer(player: BanubaMusicEditorSDK.PlayerAdoptable)
-  public func presentMusicEditor(from hostController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
-  public func dismissMusicEditor(animated: Swift.Bool, completion: (() -> Swift.Void)?)
-  @objc deinit
-}
 public protocol VoiceFilterProvider {
   func provideFilters() -> [BanubaMusicEditorSDK.VoiceFilter]
 }
@@ -353,6 +337,22 @@ public protocol AudioEditorServiceAdoptable : AnyObject {
 public protocol AudioPlayerDelegate : AnyObject {
   func playerPlaysFrameAtTime(_ time: Foundation.TimeInterval)
   func didEndPlaying()
+}
+public protocol BanubaMusicEditorDelegate : AnyObject {
+  func banubaMusicEditorDidDone(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
+  func banubaMusicEditorDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor)
+  func banubaMusicEditorNeedsToUpdatePlayer(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor)
+  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, didPresent message: Swift.String)
+  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, needsMicrophoneAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
+  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, needsCameraAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
+}
+public class BanubaMusicEditor {
+  weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorDelegate?
+  public init(audioEditorService: BanubaMusicEditorSDK.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaMusicEditorSDK.TimeLineDataSourceAdoptable, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: BanubaMusicEditorSDK.PlayablePreview, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
+  public func updatePreviewPlayer(player: BanubaMusicEditorSDK.PlayerAdoptable)
+  public func presentMusicEditor(from hostController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  public func dismissMusicEditor(animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  @objc deinit
 }
 public struct MusicEditorConfig {
   public var mainMusicViewControllerConfig: BanubaMusicEditorSDK.MainMusicViewControllerConfig
