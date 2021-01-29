@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BanubaMusicEditorSDK
 import AVFoundation
 @_exported import BanubaMusicEditorSDK
@@ -58,6 +58,10 @@ public protocol AudioWriterAdoptable : AnyObject {
   func prepare()
   func startCapturing(forDuration duration: Foundation.TimeInterval?)
   func stopCapturing()
+  func setAudioCategory(_ category: AVFoundation.AVAudioSession.Category)
+}
+extension Double {
+  public func stringFromTimeInterval(isMiliSecondsEnabled: Swift.Bool = true) -> Swift.String
 }
 public protocol AudioItem {
   var id: Swift.Int64 { get }
@@ -166,7 +170,6 @@ public struct AudioRecorderViewControllerConfig {
   public var playerControlsHeight: CoreGraphics.CGFloat
   public var recordButton: BanubaMusicEditorSDK.ControlButtonConfig
   public var backButtonImage: Swift.String
-  public var resetButtonImage: Swift.String
   public var doneButtonImage: Swift.String
   public var dimViewColor: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
@@ -332,6 +335,7 @@ public protocol AudioEditorServiceAdoptable : AnyObject {
   func autoRepeat(repeat: Swift.Bool)
   func seekToStart(isEnabled: Swift.Bool)
   func createAudioDirectory()
+  func unload()
   var delegate: BanubaMusicEditorSDK.AudioPlayerDelegate? { get set }
 }
 public protocol AudioPlayerDelegate : AnyObject {
@@ -359,9 +363,8 @@ public struct MusicEditorConfig {
   public var videoTrackLineEditControllerConfig: BanubaMusicEditorSDK.VideoTrackLineEditViewControllerConfig
   public var audioTrackLineEditControllerConfig: BanubaMusicEditorSDK.AudioTrackLineEditViewControllerConfig
   public var audioRecorderViewControllerConfig: BanubaMusicEditorSDK.AudioRecorderViewControllerConfig
-  public var isAudioBrowserEnabled: Swift.Bool
-  public init(isAudioBrowserEnabled: Swift.Bool)
-  public init(mainMusicViewControllerConfig: BanubaMusicEditorSDK.MainMusicViewControllerConfig, videoTrackLineEditControllerConfig: BanubaMusicEditorSDK.VideoTrackLineEditViewControllerConfig, audioTrackLineEditControllerConfig: BanubaMusicEditorSDK.AudioTrackLineEditViewControllerConfig, audioRecorderViewControllerConfig: BanubaMusicEditorSDK.AudioRecorderViewControllerConfig, isAudioBrowserEnabled: Swift.Bool)
+  public init()
+  public init(mainMusicViewControllerConfig: BanubaMusicEditorSDK.MainMusicViewControllerConfig, videoTrackLineEditControllerConfig: BanubaMusicEditorSDK.VideoTrackLineEditViewControllerConfig, audioTrackLineEditControllerConfig: BanubaMusicEditorSDK.AudioTrackLineEditViewControllerConfig, audioRecorderViewControllerConfig: BanubaMusicEditorSDK.AudioRecorderViewControllerConfig)
 }
 public protocol TimeLineDataSourceAdoptable : AnyObject {
   var durationInSeconds: Swift.Float64 { get }
