@@ -191,7 +191,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -219,26 +218,42 @@ SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK9AudioItem_")
 
 @class ControlButtonConfig;
 @class UIColor;
-@class BackgroundConfig;
+@class MusicEditorBackgroundConfiguration;
 
+/// The Audio recorder view configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK33AudioRecorderViewControllerConfig")
 @interface AudioRecorderViewControllerConfig : NSObject
+/// ControlButtonConfig setups rewind to start button
 @property (nonatomic, strong) ControlButtonConfig * _Nullable rewindToStartButton;
+/// ControlButtonConfig setups play pause button
 @property (nonatomic, strong) ControlButtonConfig * _Nonnull playPauseButton;
+/// Player controls height
 @property (nonatomic) CGFloat playerControlsHeight;
+/// ControlButtonConfig setups record button
 @property (nonatomic, strong) ControlButtonConfig * _Nonnull recordButton;
+/// Image name setups back button UIImage
 @property (nonatomic, copy) NSString * _Nonnull backButtonImage;
-@property (nonatomic, copy) NSString * _Nonnull resetButtonImage;
+/// Image name setups done button UIImage
 @property (nonatomic, copy) NSString * _Nonnull doneButtonImage;
+/// Image name setups reset button UIImage
+@property (nonatomic, copy) NSString * _Nonnull resetButtonImage;
+/// Dim view color
 @property (nonatomic, strong) UIColor * _Nonnull dimViewColor;
+/// Additional labels color
 @property (nonatomic, strong) UIColor * _Nonnull additionalLabelColors;
+/// Countdown to start recording
 @property (nonatomic) NSTimeInterval startingRecordingTimerSeconds;
+/// Timer color
 @property (nonatomic, strong) UIColor * _Nonnull timerColor;
+/// Cursor color
 @property (nonatomic, strong) UIColor * _Nonnull cursorColor;
-@property (nonatomic, strong) BackgroundConfig * _Nonnull backgroundConfiguration;
-@property (nonatomic, strong) BackgroundConfig * _Nonnull playerControlsBackgroundConfiguration;
+/// BackgroundConfiguration setups background view
+@property (nonatomic, strong) MusicEditorBackgroundConfiguration * _Nonnull backgroundConfiguration;
+/// BackgroundConfiguration setups player controls background view
+@property (nonatomic, strong) MusicEditorBackgroundConfiguration * _Nonnull playerControlsBackgroundConfiguration;
+/// Time line corner radius
 @property (nonatomic) CGFloat timelineCornerRadius;
-- (nonnull instancetype)initWithRewindToStartButton:(ControlButtonConfig * _Nullable)rewindToStartButton playPauseButton:(ControlButtonConfig * _Nonnull)playPauseButton playerControlsHeight:(CGFloat)playerControlsHeight recordButton:(ControlButtonConfig * _Nonnull)recordButton backButtonImage:(NSString * _Nonnull)backButtonImage resetButtonImage:(NSString * _Nonnull)resetButtonImage doneButtonImage:(NSString * _Nonnull)doneButtonImage dimViewColor:(UIColor * _Nonnull)dimViewColor additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors startingRecordingTimerSeconds:(NSTimeInterval)startingRecordingTimerSeconds timerColor:(UIColor * _Nonnull)timerColor cursorColor:(UIColor * _Nonnull)cursorColor backgroundConfiguration:(BackgroundConfig * _Nonnull)backgroundConfiguration playerControlsBackgroundConfiguration:(BackgroundConfig * _Nonnull)playerControlsBackgroundConfiguration timelineCornerRadius:(CGFloat)timelineCornerRadius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRewindToStartButton:(ControlButtonConfig * _Nullable)rewindToStartButton playPauseButton:(ControlButtonConfig * _Nonnull)playPauseButton playerControlsHeight:(CGFloat)playerControlsHeight recordButton:(ControlButtonConfig * _Nonnull)recordButton backButtonImage:(NSString * _Nonnull)backButtonImage resetButtonImage:(NSString * _Nonnull)resetButtonImage doneButtonImage:(NSString * _Nonnull)doneButtonImage dimViewColor:(UIColor * _Nonnull)dimViewColor additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors startingRecordingTimerSeconds:(NSTimeInterval)startingRecordingTimerSeconds timerColor:(UIColor * _Nonnull)timerColor cursorColor:(UIColor * _Nonnull)cursorColor backgroundConfiguration:(MusicEditorBackgroundConfiguration * _Nonnull)backgroundConfiguration playerControlsBackgroundConfiguration:(MusicEditorBackgroundConfiguration * _Nonnull)playerControlsBackgroundConfiguration timelineCornerRadius:(CGFloat)timelineCornerRadius OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -248,35 +263,61 @@ SWIFT_CLASS("_TtC20BanubaMusicEditorSDK33AudioRecorderViewControllerConfig")
 @class VoiceFilterConfiguration;
 @protocol VoiceFilterProvider;
 
+/// The Audio track line edit view controller configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfig")
 @interface AudioTrackLineEditViewControllerConfig : NSObject
+/// AudioWaveConfiguration setups audio wave style
 @property (nonatomic, strong) AudioWaveConfiguration * _Nonnull audioWaveConfiguration;
+/// Image name setups done buttom UIImage
 @property (nonatomic, copy) NSString * _Nonnull doneButtonImageName;
+/// Done button tint color
 @property (nonatomic, strong) UIColor * _Nonnull doneButtonTintColor;
+/// Slider tint color
 @property (nonatomic, strong) UIColor * _Nonnull sliderTintColor;
+/// Draggers background color
 @property (nonatomic, strong) UIColor * _Nonnull draggersColor;
+/// Image name setups draggers additional UIImage
 @property (nonatomic, copy) NSString * _Nullable draggerImageName;
+/// Trim container height
 @property (nonatomic) CGFloat trimHeight;
+/// Trim container border lines color
 @property (nonatomic, strong) UIColor * _Nonnull trimBorderColor;
+/// Trim container border lines width
 @property (nonatomic) CGFloat trimBorderWidth;
+/// Cursor height
 @property (nonatomic) CGFloat cursorHeight;
+/// Dim view background color
 @property (nonatomic, strong) UIColor * _Nonnull dimViewColor;
+/// Main labels’ title color
 @property (nonatomic, strong) UIColor * _Nonnull mainLabelColors;
+/// Additional labels’ title color
 @property (nonatomic, strong) UIColor * _Nonnull additionalLabelColors;
+/// Cursor background color
 @property (nonatomic, strong) UIColor * _Nonnull cursorColor;
+/// Draggers’ view width
 @property (nonatomic) CGFloat draggersWidth;
+/// Draggers’ central line view color
 @property (nonatomic, strong) UIColor * _Nonnull draggersLineColor;
+/// Draggers’ view corner radius
 @property (nonatomic) CGFloat draggersCornerRadius;
+/// Draggers’ central line view width
 @property (nonatomic) CGFloat draggersLineWidth;
+/// Draggers’ central line view height
 @property (nonatomic) CGFloat draggersLineHeight;
+/// Number of draggers’ central lines
 @property (nonatomic) NSInteger numberOfLinesInDraggers;
+/// Draggers’ central lines spacing
 @property (nonatomic) CGFloat draggerLinesSpacing;
+/// Draggers’ central lines corner radius
 @property (nonatomic) CGFloat draggersLineCornerRadius;
-@property (nonatomic, strong) BackgroundConfig * _Nonnull backgroundConfiguration;
+/// BackgroundConfiguration setups common container view background style
+@property (nonatomic, strong) MusicEditorBackgroundConfiguration * _Nonnull backgroundConfiguration;
+/// VoiceFilterConfiguration setups voice filter container view item style
 @property (nonatomic, strong) VoiceFilterConfiguration * _Nullable voiceFilterConfiguration;
+/// VoiceFilterProvider setups voice filters provider
 @property (nonatomic, strong) id <VoiceFilterProvider> _Nullable voiceFilterProvider;
 @property (nonatomic, readonly) BOOL isVoiceFilterHidden;
-- (nonnull instancetype)initWithAudioWaveConfiguration:(AudioWaveConfiguration * _Nonnull)audioWaveConfiguration doneButtonImageName:(NSString * _Nonnull)doneButtonImageName doneButtonTintColor:(UIColor * _Nonnull)doneButtonTintColor sliderTintColor:(UIColor * _Nonnull)sliderTintColor draggersColor:(UIColor * _Nonnull)draggersColor draggerImageName:(NSString * _Nullable)draggerImageName trimHeight:(CGFloat)trimHeight trimBorderColor:(UIColor * _Nonnull)trimBorderColor trimBorderWidth:(CGFloat)trimBorderWidth cursorHeight:(CGFloat)cursorHeight dimViewColor:(UIColor * _Nonnull)dimViewColor mainLabelColors:(UIColor * _Nonnull)mainLabelColors additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors cursorColor:(UIColor * _Nonnull)cursorColor draggersWidth:(CGFloat)draggersWidth draggersLineColor:(UIColor * _Nonnull)draggersLineColor draggersCornerRadius:(CGFloat)draggersCornerRadius draggersLineWidth:(CGFloat)draggersLineWidth draggersLineHeight:(CGFloat)draggersLineHeight numberOfLinesInDraggers:(NSInteger)numberOfLinesInDraggers draggerLinesSpacing:(CGFloat)draggerLinesSpacing draggersLineCornerRadius:(CGFloat)draggersLineCornerRadius backgroundConfiguration:(BackgroundConfig * _Nonnull)backgroundConfiguration voiceFilterConfiguration:(VoiceFilterConfiguration * _Nullable)voiceFilterConfiguration voiceFilterProvider:(id <VoiceFilterProvider> _Nullable)voiceFilterProvider OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAudioWaveConfiguration:(AudioWaveConfiguration * _Nonnull)audioWaveConfiguration doneButtonImageName:(NSString * _Nonnull)doneButtonImageName doneButtonTintColor:(UIColor * _Nonnull)doneButtonTintColor sliderTintColor:(UIColor * _Nonnull)sliderTintColor draggersColor:(UIColor * _Nonnull)draggersColor draggerImageName:(NSString * _Nullable)draggerImageName trimHeight:(CGFloat)trimHeight trimBorderColor:(UIColor * _Nonnull)trimBorderColor trimBorderWidth:(CGFloat)trimBorderWidth cursorHeight:(CGFloat)cursorHeight dimViewColor:(UIColor * _Nonnull)dimViewColor mainLabelColors:(UIColor * _Nonnull)mainLabelColors additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors cursorColor:(UIColor * _Nonnull)cursorColor draggersWidth:(CGFloat)draggersWidth draggersLineColor:(UIColor * _Nonnull)draggersLineColor draggersCornerRadius:(CGFloat)draggersCornerRadius draggersLineWidth:(CGFloat)draggersLineWidth draggersLineHeight:(CGFloat)draggersLineHeight numberOfLinesInDraggers:(NSInteger)numberOfLinesInDraggers draggerLinesSpacing:(CGFloat)draggerLinesSpacing draggersLineCornerRadius:(CGFloat)draggersLineCornerRadius backgroundConfiguration:(MusicEditorBackgroundConfiguration * _Nonnull)backgroundConfiguration voiceFilterConfiguration:(VoiceFilterConfiguration * _Nullable)voiceFilterConfiguration voiceFilterProvider:(id <VoiceFilterProvider> _Nullable)voiceFilterProvider OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -284,18 +325,30 @@ SWIFT_CLASS("_TtC20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfig"
 
 @class UIFont;
 
+/// The Audio wave configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK22AudioWaveConfiguration")
 @interface AudioWaveConfiguration : NSObject
+/// Is random wave color enabled
 @property (nonatomic) BOOL isRandomWaveColor;
+/// Background color view
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
+/// Time line border color
 @property (nonatomic, strong) UIColor * _Nonnull waveBorderColor;
+/// Time lime corner radius
 @property (nonatomic) CGFloat waveCornerRadius;
+/// Audio wave lines color
 @property (nonatomic, strong) UIColor * _Nonnull waveLinesColor;
+/// Time line border width
 @property (nonatomic) CGFloat borderWidth;
+/// Time line height
 @property (nonatomic) CGFloat height;
+/// Max audio wave height
 @property (nonatomic) CGFloat maxWaveHeight;
+/// Audio title font
 @property (nonatomic, strong) UIFont * _Nullable audioTitleFont;
+/// Audio title color
 @property (nonatomic, strong) UIColor * _Nullable audioTitleColor;
+/// Time line bottom offset
 @property (nonatomic) CGFloat bottomOffset;
 - (nonnull instancetype)initWithIsRandomWaveColor:(BOOL)isRandomWaveColor backgroundColor:(UIColor * _Nullable)backgroundColor waveBorderColor:(UIColor * _Nonnull)waveBorderColor waveCornerRadius:(CGFloat)waveCornerRadius waveLinesColor:(UIColor * _Nonnull)waveLinesColor borderWidth:(CGFloat)borderWidth height:(CGFloat)height maxWaveHeight:(CGFloat)maxWaveHeight audioTitleFont:(UIFont * _Nullable)audioTitleFont audioTitleColor:(UIColor * _Nullable)audioTitleColor bottomOffset:(CGFloat)bottomOffset OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -303,19 +356,29 @@ SWIFT_CLASS("_TtC20BanubaMusicEditorSDK22AudioWaveConfiguration")
 @end
 
 
-
 enum ControlButtonConfigType : NSInteger;
 
+/// The Control button configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK19ControlButtonConfig")
 @interface ControlButtonConfig : NSObject
+/// Button type
 @property (nonatomic) enum ControlButtonConfigType type;
+/// Image name setups button’s normal state UIImage
 @property (nonatomic, copy) NSString * _Nonnull imageName;
+/// Image name setups button’s selected state UIImage
 @property (nonatomic, copy) NSString * _Nullable selectedImageName;
+/// \param type Button type
+///
+/// \param imageName Image name setups button’s normal state UIImage
+///
+/// \param selectedImageName Image name setups button’s selected state UIImage
+///
 - (nonnull instancetype)initWithType:(enum ControlButtonConfigType)type imageName:(NSString * _Nonnull)imageName selectedImageName:(NSString * _Nullable)selectedImageName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Control button type
 typedef SWIFT_ENUM(NSInteger, ControlButtonConfigType, open) {
   ControlButtonConfigTypeReset = 0,
   ControlButtonConfigTypePlay = 1,
@@ -324,18 +387,35 @@ typedef SWIFT_ENUM(NSInteger, ControlButtonConfigType, open) {
 
 enum EditButtonConfigType : NSInteger;
 
+/// The Edit button configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK16EditButtonConfig")
 @interface EditButtonConfig : NSObject
+/// Title font
 @property (nonatomic, strong) UIFont * _Nonnull font;
+/// Button type
 @property (nonatomic) enum EditButtonConfigType type;
+/// Title
 @property (nonatomic, copy) NSString * _Nonnull title;
+/// Title color
 @property (nonatomic, strong) UIColor * _Nonnull titleColor;
+/// Image name setups button’s UIImage
 @property (nonatomic, copy) NSString * _Nonnull imageName;
+/// \param font Title font
+///
+/// \param type Button type
+///
+/// \param title Title
+///
+/// \param titleColor Title color
+///
+/// \param imageName Image name setups button’s UIImage
+///
 - (nonnull instancetype)initWithFont:(UIFont * _Nonnull)font type:(enum EditButtonConfigType)type title:(NSString * _Nonnull)title titleColor:(UIColor * _Nonnull)titleColor imageName:(NSString * _Nonnull)imageName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Edit Button types
 typedef SWIFT_ENUM(NSInteger, EditButtonConfigType, open) {
   EditButtonConfigTypeTrack = 0,
   EditButtonConfigTypeEffect = 1,
@@ -344,19 +424,39 @@ typedef SWIFT_ENUM(NSInteger, EditButtonConfigType, open) {
 
 enum EditCompositionButtonConfigType : NSInteger;
 
+/// The Editor composition button configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK27EditCompositionButtonConfig")
 @interface EditCompositionButtonConfig : NSObject
+/// Title font
 @property (nonatomic, strong) UIFont * _Nonnull font;
+/// Button type
 @property (nonatomic) enum EditCompositionButtonConfigType type;
+/// Title
 @property (nonatomic, copy) NSString * _Nonnull title;
+/// Title color
 @property (nonatomic, strong) UIColor * _Nonnull titleColor;
+/// Image name setups button’s normal state UIImage
 @property (nonatomic, copy) NSString * _Nonnull imageName;
+/// Image name setups button’s selected state UIImage
 @property (nonatomic, copy) NSString * _Nullable selectedImageName;
+/// \param font Title font
+///
+/// \param type Button type
+///
+/// \param title Title
+///
+/// \param titleColor Title color
+///
+/// \param imageName Image name setups button’s normal state UIImage
+///
+/// \param selectedImageName Image name setups button’s selected state UIImage
+///
 - (nonnull instancetype)initWithFont:(UIFont * _Nonnull)font type:(enum EditCompositionButtonConfigType)type title:(NSString * _Nonnull)title titleColor:(UIColor * _Nonnull)titleColor imageName:(NSString * _Nonnull)imageName selectedImageName:(NSString * _Nullable)selectedImageName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Edit composition button type
 typedef SWIFT_ENUM(NSInteger, EditCompositionButtonConfigType, open) {
   EditCompositionButtonConfigTypeEdit = 0,
   EditCompositionButtonConfigTypeDelete = 1,
@@ -377,62 +477,105 @@ SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK37EffectSelectionViewControllerDelegat
 @end
 
 
-@class TextButtonConfig;
+@class MusicEditorTextButtonConfig;
 
+/// The Main music editor view configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK29MainMusicViewControllerConfig")
 @interface MainMusicViewControllerConfig : NSObject
+/// Array of adding buttons
 @property (nonatomic, copy) NSArray<EditButtonConfig *> * _Nonnull editButtons;
+/// Adding buttons container height
 @property (nonatomic) CGFloat editButtonsHeight;
+/// Array of edit composition buttons
 @property (nonatomic, copy) NSArray<EditCompositionButtonConfig *> * _Nonnull editCompositionButtons;
+/// Array of control buttons
 @property (nonatomic, copy) NSArray<ControlButtonConfig *> * _Nonnull controlButtons;
+/// Control buttons container height
 @property (nonatomic) CGFloat playerControlsHeight;
+/// AudioWaveConfiguration setups audio wave style
 @property (nonatomic, strong) AudioWaveConfiguration * _Nonnull audioWaveConfiguration;
+/// Color for main titles color
 @property (nonatomic, strong) UIColor * _Nonnull mainLabelColors;
+/// Color for additional titles color
 @property (nonatomic, strong) UIColor * _Nonnull additionalLabelColors;
+/// Image name setups speaker image view
 @property (nonatomic, copy) NSString * _Nonnull speakerImageName;
-@property (nonatomic, strong) TextButtonConfig * _Nonnull volumeLabel;
+/// TextButtonConfig setups volume label title style
+@property (nonatomic, strong) MusicEditorTextButtonConfig * _Nonnull volumeLabel;
+/// Number of maximum tracks
 @property (nonatomic) NSInteger tracksLimit;
+/// Cursor color
 @property (nonatomic, strong) UIColor * _Nonnull cursorColor;
-@property (nonatomic, strong) BackgroundConfig * _Nonnull controlsBackgroundConfiguration;
-@property (nonatomic, strong) BackgroundConfig * _Nonnull backgroundConfiguration;
+/// BackgroundConfiguration setups controls container background style
+@property (nonatomic, strong) MusicEditorBackgroundConfiguration * _Nonnull controlsBackgroundConfiguration;
+/// BackgroundConfiguration setups main view background style
+@property (nonatomic, strong) MusicEditorBackgroundConfiguration * _Nonnull backgroundConfiguration;
+/// Time line corner radius
 @property (nonatomic) CGFloat timelineCornerRadius;
-- (nonnull instancetype)initWithEditButtons:(NSArray<EditButtonConfig *> * _Nonnull)editButtons editButtonsHeight:(CGFloat)editButtonsHeight editCompositionButtons:(NSArray<EditCompositionButtonConfig *> * _Nonnull)editCompositionButtons controlButtons:(NSArray<ControlButtonConfig *> * _Nonnull)controlButtons playerControlsHeight:(CGFloat)playerControlsHeight audioWaveConfiguration:(AudioWaveConfiguration * _Nonnull)audioWaveConfiguration mainLabelColors:(UIColor * _Nonnull)mainLabelColors additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors speakerImageName:(NSString * _Nonnull)speakerImageName volumeLabel:(TextButtonConfig * _Nonnull)volumeLabel tracksLimit:(NSInteger)tracksLimit cursorColor:(UIColor * _Nonnull)cursorColor controlsBackgroundConfiguration:(BackgroundConfig * _Nonnull)controlsBackgroundConfiguration backgroundConfiguration:(BackgroundConfig * _Nonnull)backgroundConfiguration timelineCornerRadius:(CGFloat)timelineCornerRadius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithEditButtons:(NSArray<EditButtonConfig *> * _Nonnull)editButtons editButtonsHeight:(CGFloat)editButtonsHeight editCompositionButtons:(NSArray<EditCompositionButtonConfig *> * _Nonnull)editCompositionButtons controlButtons:(NSArray<ControlButtonConfig *> * _Nonnull)controlButtons playerControlsHeight:(CGFloat)playerControlsHeight audioWaveConfiguration:(AudioWaveConfiguration * _Nonnull)audioWaveConfiguration mainLabelColors:(UIColor * _Nonnull)mainLabelColors additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors speakerImageName:(NSString * _Nonnull)speakerImageName volumeLabel:(MusicEditorTextButtonConfig * _Nonnull)volumeLabel tracksLimit:(NSInteger)tracksLimit cursorColor:(UIColor * _Nonnull)cursorColor controlsBackgroundConfiguration:(MusicEditorBackgroundConfiguration * _Nonnull)controlsBackgroundConfiguration backgroundConfiguration:(MusicEditorBackgroundConfiguration * _Nonnull)backgroundConfiguration timelineCornerRadius:(CGFloat)timelineCornerRadius OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
 
+/// Music Editor namespace
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK11MusicEditor")
 @interface MusicEditor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtCC20BanubaMusicEditorSDK11MusicEditor16TextButtonConfig")
-@interface TextButtonConfig : NSObject
+/// The Text button configuration
+SWIFT_CLASS("_TtCC20BanubaMusicEditorSDK11MusicEditor27MusicEditorTextButtonConfig")
+@interface MusicEditorTextButtonConfig : NSObject
+/// Title font
+@property (nonatomic, strong) UIFont * _Nonnull font;
+/// Title color
+@property (nonatomic, strong) UIColor * _Nonnull color;
+/// Title
+@property (nonatomic, copy) NSString * _Nonnull title;
 - (nonnull instancetype)initWithFont:(UIFont * _Nonnull)font color:(UIColor * _Nonnull)color title:(NSString * _Nonnull)title OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-SWIFT_CLASS("_TtCC20BanubaMusicEditorSDK11MusicEditor16BackgroundConfig")
-@interface BackgroundConfig : NSObject
+/// The Background configuration
+SWIFT_CLASS("_TtCC20BanubaMusicEditorSDK11MusicEditor34MusicEditorBackgroundConfiguration")
+@interface MusicEditorBackgroundConfiguration : NSObject
+/// Layer’s corner radius
+@property (nonatomic) CGFloat cornerRadius;
+/// Background color
+@property (nonatomic, strong) UIColor * _Nonnull color;
 - (nonnull instancetype)initWithCornerRadius:(CGFloat)cornerRadius color:(UIColor * _Nonnull)color OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 @class VideoTrackLineEditViewControllerConfig;
 
+/// The Music Editor config
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK17MusicEditorConfig")
 @interface MusicEditorConfig : NSObject
+/// MainMusicViewControllerConfig setups main screen style
 @property (nonatomic, strong) MainMusicViewControllerConfig * _Nonnull mainMusicViewControllerConfig;
+/// VideoTrackLineEditViewControllerConfig setups video track line editing screen style
 @property (nonatomic, strong) VideoTrackLineEditViewControllerConfig * _Nonnull videoTrackLineEditControllerConfig;
+/// VideoTrackLineEditViewControllerConfig setups audio track line editing screen style
 @property (nonatomic, strong) AudioTrackLineEditViewControllerConfig * _Nonnull audioTrackLineEditControllerConfig;
+/// AudioRecorderViewControllerConfig setups audio recorder style
 @property (nonatomic, strong) AudioRecorderViewControllerConfig * _Nonnull audioRecorderViewControllerConfig;
 - (nonnull instancetype)init;
+/// \param mainMusicViewControllerConfig MainMusicViewControllerConfig setups main screen style
+///
+/// \param videoTrackLineEditControllerConfig VideoTrackLineEditViewControllerConfig setups video track line editing screen style
+///
+/// \param audioTrackLineEditControllerConfig VideoTrackLineEditViewControllerConfig setups audio track line editing screen style
+///
+/// \param audioRecorderViewControllerConfig AudioRecorderViewControllerConfig setups audio recorder style
+///
 - (nonnull instancetype)initWithMainMusicViewControllerConfig:(MainMusicViewControllerConfig * _Nonnull)mainMusicViewControllerConfig videoTrackLineEditControllerConfig:(VideoTrackLineEditViewControllerConfig * _Nonnull)videoTrackLineEditControllerConfig audioTrackLineEditControllerConfig:(AudioTrackLineEditViewControllerConfig * _Nonnull)audioTrackLineEditControllerConfig audioRecorderViewControllerConfig:(AudioRecorderViewControllerConfig * _Nonnull)audioRecorderViewControllerConfig OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -471,16 +614,24 @@ SWIFT_PROTOCOL("_TtP20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegate
 
 
 
+/// The Video track line editor view configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfig")
 @interface VideoTrackLineEditViewControllerConfig : NSObject
+/// Image name setups done button UIImage
 @property (nonatomic, copy) NSString * _Nonnull doneButtonImageName;
+/// Done button tint color
 @property (nonatomic, strong) UIColor * _Nonnull doneButtonTintColor;
+/// Slider tint color
 @property (nonatomic, strong) UIColor * _Nonnull sliderTintColor;
+/// Main labels color
 @property (nonatomic, strong) UIColor * _Nonnull mainLabelColors;
+/// Additional labels colors
 @property (nonatomic, strong) UIColor * _Nonnull additionalLabelColors;
-@property (nonatomic, strong) BackgroundConfig * _Nonnull backgroundConfiguration;
+/// BackgroundConfiguration setups background view
+@property (nonatomic, strong) MusicEditorBackgroundConfiguration * _Nonnull backgroundConfiguration;
+/// Pop-up screen’s height
 @property (nonatomic) CGFloat height;
-- (nonnull instancetype)initWithDoneButtonImageName:(NSString * _Nonnull)doneButtonImageName doneButtonTintColor:(UIColor * _Nonnull)doneButtonTintColor sliderTintColor:(UIColor * _Nonnull)sliderTintColor mainLabelColors:(UIColor * _Nonnull)mainLabelColors additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors backgroundConfiguration:(BackgroundConfig * _Nonnull)backgroundConfiguration height:(CGFloat)height OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDoneButtonImageName:(NSString * _Nonnull)doneButtonImageName doneButtonTintColor:(UIColor * _Nonnull)doneButtonTintColor sliderTintColor:(UIColor * _Nonnull)sliderTintColor mainLabelColors:(UIColor * _Nonnull)mainLabelColors additionalLabelColors:(UIColor * _Nonnull)additionalLabelColors backgroundConfiguration:(MusicEditorBackgroundConfiguration * _Nonnull)backgroundConfiguration height:(CGFloat)height OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -494,18 +645,42 @@ SWIFT_CLASS("_TtC20BanubaMusicEditorSDK11VoiceFilter")
 @end
 
 
+/// The Voice filter configuration
 SWIFT_CLASS("_TtC20BanubaMusicEditorSDK24VoiceFilterConfiguration")
 @interface VoiceFilterConfiguration : NSObject
+/// Container layer corner radius
 @property (nonatomic) CGFloat cornerRadius;
+/// UIImageView layer corner radius
 @property (nonatomic) CGFloat imageCornerRadius;
-@property (nonatomic) UIEdgeInsets imageEdgeInsets;
+/// Container selection state border line width
 @property (nonatomic) CGFloat selectionBorderWidth;
+/// Color for selection state
 @property (nonatomic, strong) UIColor * _Nonnull selectionColor;
+/// Title font
 @property (nonatomic, strong) UIFont * _Nonnull font;
+/// Title text color
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
+/// Discard filter title
 @property (nonatomic, copy) NSString * _Nullable noneFilterTitle;
+/// Discard filter image name for UIImage
 @property (nonatomic, copy) NSString * _Nonnull noneFilterImageName;
-- (nonnull instancetype)initWithCornerRadius:(CGFloat)cornerRadius imageCornerRadius:(CGFloat)imageCornerRadius imageEdgeInsets:(UIEdgeInsets)imageEdgeInsets selectionBorderWidth:(CGFloat)selectionBorderWidth selectionColor:(UIColor * _Nonnull)selectionColor font:(UIFont * _Nonnull)font textColor:(UIColor * _Nonnull)textColor noneFilterTitle:(NSString * _Nullable)noneFilterTitle noneFilterImageName:(NSString * _Nonnull)noneFilterImageName OBJC_DESIGNATED_INITIALIZER;
+/// \param cornerRadius Container layer corner radius
+///
+/// \param imageCornerRadius UIImageView layer corner radius
+///
+/// \param selectionBorderWidth Container selection state border line width
+///
+/// \param selectionColor Color for selection state
+///
+/// \param font Title font
+///
+/// \param textColor Title text color
+///
+/// \param noneFilterTitle Discard filter title
+///
+/// \param noneFilterImageName Discard filter image name for UIImage
+///
+- (nonnull instancetype)initWithCornerRadius:(CGFloat)cornerRadius imageCornerRadius:(CGFloat)imageCornerRadius selectionBorderWidth:(CGFloat)selectionBorderWidth selectionColor:(UIColor * _Nonnull)selectionColor font:(UIFont * _Nonnull)font textColor:(UIColor * _Nonnull)textColor noneFilterTitle:(NSString * _Nullable)noneFilterTitle noneFilterImageName:(NSString * _Nonnull)noneFilterImageName OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

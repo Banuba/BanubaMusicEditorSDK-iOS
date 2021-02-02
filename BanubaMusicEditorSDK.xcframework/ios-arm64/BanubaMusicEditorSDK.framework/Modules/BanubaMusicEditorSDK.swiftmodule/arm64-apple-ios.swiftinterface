@@ -60,6 +60,10 @@ public protocol AudioWriterAdoptable : AnyObject {
   func prepare()
   func startCapturing(forDuration duration: Foundation.TimeInterval?)
   func stopCapturing()
+  func setAudioCategory(_ category: AVFoundation.AVAudioSession.Category)
+}
+extension Double {
+  public func stringFromTimeInterval(isMiliSecondsEnabled: Swift.Bool = true) -> Swift.String
 }
 @objc public protocol MusicEditorExternalViewControllerFactory {
   @objc func makeTrackSelectionViewController(selectedAudioItem: BanubaMusicEditorSDK.AudioItem?) -> BanubaMusicEditorSDK.TrackSelectionViewController?
@@ -148,13 +152,13 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   @objc public var mainLabelColors: UIKit.UIColor
   @objc public var additionalLabelColors: UIKit.UIColor
   @objc public var speakerImageName: Swift.String
-  @objc public var volumeLabel: BanubaMusicEditorSDK.MusicEditor.TextButtonConfig
+  @objc public var volumeLabel: BanubaMusicEditorSDK.MusicEditor.MusicEditorTextButtonConfig
   @objc public var tracksLimit: Swift.Int
   @objc public var cursorColor: UIKit.UIColor
-  @objc public var controlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig
-  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig
+  @objc public var controlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration
+  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration
   @objc public var timelineCornerRadius: CoreGraphics.CGFloat
-  @objc public init(editButtons: [BanubaMusicEditorSDK.EditButtonConfig], editButtonsHeight: CoreGraphics.CGFloat, editCompositionButtons: [BanubaMusicEditorSDK.EditCompositionButtonConfig], controlButtons: [BanubaMusicEditorSDK.ControlButtonConfig], playerControlsHeight: CoreGraphics.CGFloat, audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration, mainLabelColors: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, speakerImageName: Swift.String, volumeLabel: BanubaMusicEditorSDK.MusicEditor.TextButtonConfig, tracksLimit: Swift.Int, cursorColor: UIKit.UIColor, controlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig, timelineCornerRadius: CoreGraphics.CGFloat)
+  @objc public init(editButtons: [BanubaMusicEditorSDK.EditButtonConfig], editButtonsHeight: CoreGraphics.CGFloat, editCompositionButtons: [BanubaMusicEditorSDK.EditCompositionButtonConfig], controlButtons: [BanubaMusicEditorSDK.ControlButtonConfig], playerControlsHeight: CoreGraphics.CGFloat, audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration, mainLabelColors: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, speakerImageName: Swift.String, volumeLabel: BanubaMusicEditorSDK.MusicEditor.MusicEditorTextButtonConfig, tracksLimit: Swift.Int, cursorColor: UIKit.UIColor, controlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration, timelineCornerRadius: CoreGraphics.CGFloat)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -164,17 +168,17 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   @objc public var playerControlsHeight: CoreGraphics.CGFloat
   @objc public var recordButton: BanubaMusicEditorSDK.ControlButtonConfig
   @objc public var backButtonImage: Swift.String
-  @objc public var resetButtonImage: Swift.String
   @objc public var doneButtonImage: Swift.String
+  @objc public var resetButtonImage: Swift.String
   @objc public var dimViewColor: UIKit.UIColor
   @objc public var additionalLabelColors: UIKit.UIColor
   @objc public var startingRecordingTimerSeconds: Foundation.TimeInterval
   @objc public var timerColor: UIKit.UIColor
   @objc public var cursorColor: UIKit.UIColor
-  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig
-  @objc public var playerControlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig
+  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration
+  @objc public var playerControlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration
   @objc public var timelineCornerRadius: CoreGraphics.CGFloat
-  @objc public init(rewindToStartButton: BanubaMusicEditorSDK.ControlButtonConfig? = nil, playPauseButton: BanubaMusicEditorSDK.ControlButtonConfig, playerControlsHeight: CoreGraphics.CGFloat, recordButton: BanubaMusicEditorSDK.ControlButtonConfig, backButtonImage: Swift.String, resetButtonImage: Swift.String, doneButtonImage: Swift.String, dimViewColor: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, startingRecordingTimerSeconds: Foundation.TimeInterval, timerColor: UIKit.UIColor, cursorColor: UIKit.UIColor, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig, playerControlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig, timelineCornerRadius: CoreGraphics.CGFloat)
+  @objc public init(rewindToStartButton: BanubaMusicEditorSDK.ControlButtonConfig? = nil, playPauseButton: BanubaMusicEditorSDK.ControlButtonConfig, playerControlsHeight: CoreGraphics.CGFloat, recordButton: BanubaMusicEditorSDK.ControlButtonConfig, backButtonImage: Swift.String, resetButtonImage: Swift.String, doneButtonImage: Swift.String, dimViewColor: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, startingRecordingTimerSeconds: Foundation.TimeInterval, timerColor: UIKit.UIColor, cursorColor: UIKit.UIColor, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration, playerControlsBackgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration, timelineCornerRadius: CoreGraphics.CGFloat)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -184,9 +188,9 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   @objc public var sliderTintColor: UIKit.UIColor
   @objc public var mainLabelColors: UIKit.UIColor
   @objc public var additionalLabelColors: UIKit.UIColor
-  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig
+  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration
   @objc public var height: CoreGraphics.CGFloat
-  @objc public init(doneButtonImageName: Swift.String, doneButtonTintColor: UIKit.UIColor, sliderTintColor: UIKit.UIColor, mainLabelColors: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig, height: CoreGraphics.CGFloat)
+  @objc public init(doneButtonImageName: Swift.String, doneButtonTintColor: UIKit.UIColor, sliderTintColor: UIKit.UIColor, mainLabelColors: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration, height: CoreGraphics.CGFloat)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -229,13 +233,13 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   @objc public var numberOfLinesInDraggers: Swift.Int
   @objc public var draggerLinesSpacing: CoreGraphics.CGFloat
   @objc public var draggersLineCornerRadius: CoreGraphics.CGFloat
-  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig
+  @objc public var backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration
   @objc public var voiceFilterConfiguration: BanubaMusicEditorSDK.VoiceFilterConfiguration?
   @objc public var voiceFilterProvider: BanubaMusicEditorSDK.VoiceFilterProvider?
   @objc public var isVoiceFilterHidden: Swift.Bool {
     @objc get
   }
-  @objc public init(audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration, doneButtonImageName: Swift.String, doneButtonTintColor: UIKit.UIColor, sliderTintColor: UIKit.UIColor, draggersColor: UIKit.UIColor, draggerImageName: Swift.String? = nil, trimHeight: CoreGraphics.CGFloat, trimBorderColor: UIKit.UIColor, trimBorderWidth: CoreGraphics.CGFloat, cursorHeight: CoreGraphics.CGFloat, dimViewColor: UIKit.UIColor, mainLabelColors: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, cursorColor: UIKit.UIColor, draggersWidth: CoreGraphics.CGFloat, draggersLineColor: UIKit.UIColor, draggersCornerRadius: CoreGraphics.CGFloat, draggersLineWidth: CoreGraphics.CGFloat, draggersLineHeight: CoreGraphics.CGFloat, numberOfLinesInDraggers: Swift.Int, draggerLinesSpacing: CoreGraphics.CGFloat, draggersLineCornerRadius: CoreGraphics.CGFloat, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.BackgroundConfig, voiceFilterConfiguration: BanubaMusicEditorSDK.VoiceFilterConfiguration? = nil, voiceFilterProvider: BanubaMusicEditorSDK.VoiceFilterProvider? = nil)
+  @objc public init(audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration, doneButtonImageName: Swift.String, doneButtonTintColor: UIKit.UIColor, sliderTintColor: UIKit.UIColor, draggersColor: UIKit.UIColor, draggerImageName: Swift.String? = nil, trimHeight: CoreGraphics.CGFloat, trimBorderColor: UIKit.UIColor, trimBorderWidth: CoreGraphics.CGFloat, cursorHeight: CoreGraphics.CGFloat, dimViewColor: UIKit.UIColor, mainLabelColors: UIKit.UIColor, additionalLabelColors: UIKit.UIColor, cursorColor: UIKit.UIColor, draggersWidth: CoreGraphics.CGFloat, draggersLineColor: UIKit.UIColor, draggersCornerRadius: CoreGraphics.CGFloat, draggersLineWidth: CoreGraphics.CGFloat, draggersLineHeight: CoreGraphics.CGFloat, numberOfLinesInDraggers: Swift.Int, draggerLinesSpacing: CoreGraphics.CGFloat, draggersLineCornerRadius: CoreGraphics.CGFloat, backgroundConfiguration: BanubaMusicEditorSDK.MusicEditor.MusicEditorBackgroundConfiguration, voiceFilterConfiguration: BanubaMusicEditorSDK.VoiceFilterConfiguration? = nil, voiceFilterProvider: BanubaMusicEditorSDK.VoiceFilterProvider? = nil)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -298,18 +302,18 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @objc public class MusicEditor : ObjectiveC.NSObject {
-  @objc public class TextButtonConfig : ObjectiveC.NSObject {
+  @objc public class MusicEditorTextButtonConfig : ObjectiveC.NSObject {
+    @objc public var font: UIKit.UIFont
+    @objc public var color: UIKit.UIColor
+    @objc public var title: Swift.String
     @objc public init(font: UIKit.UIFont, color: UIKit.UIColor, title: Swift.String)
-    public var font: UIKit.UIFont
-    public var color: UIKit.UIColor
-    public var title: Swift.String
     @objc deinit
     @objc override dynamic public init()
   }
-  @objc public class BackgroundConfig : ObjectiveC.NSObject {
+  @objc public class MusicEditorBackgroundConfiguration : ObjectiveC.NSObject {
+    @objc public var cornerRadius: CoreGraphics.CGFloat
+    @objc public var color: UIKit.UIColor
     @objc public init(cornerRadius: CoreGraphics.CGFloat, color: UIKit.UIColor)
-    public var cornerRadius: CoreGraphics.CGFloat
-    public var color: UIKit.UIColor
     @objc deinit
     @objc override dynamic public init()
   }
@@ -319,14 +323,13 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
 @objc public class VoiceFilterConfiguration : ObjectiveC.NSObject {
   @objc public var cornerRadius: CoreGraphics.CGFloat
   @objc public var imageCornerRadius: CoreGraphics.CGFloat
-  @objc public var imageEdgeInsets: UIKit.UIEdgeInsets
   @objc public var selectionBorderWidth: CoreGraphics.CGFloat
   @objc public var selectionColor: UIKit.UIColor
   @objc public var font: UIKit.UIFont
   @objc public var textColor: UIKit.UIColor
   @objc public var noneFilterTitle: Swift.String?
   @objc public var noneFilterImageName: Swift.String
-  @objc public init(cornerRadius: CoreGraphics.CGFloat, imageCornerRadius: CoreGraphics.CGFloat, imageEdgeInsets: UIKit.UIEdgeInsets, selectionBorderWidth: CoreGraphics.CGFloat, selectionColor: UIKit.UIColor, font: UIKit.UIFont, textColor: UIKit.UIColor, noneFilterTitle: Swift.String?, noneFilterImageName: Swift.String)
+  @objc public init(cornerRadius: CoreGraphics.CGFloat, imageCornerRadius: CoreGraphics.CGFloat, selectionBorderWidth: CoreGraphics.CGFloat, selectionColor: UIKit.UIColor, font: UIKit.UIFont, textColor: UIKit.UIColor, noneFilterTitle: Swift.String?, noneFilterImageName: Swift.String)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -355,6 +358,7 @@ public protocol AudioEditorServiceAdoptable : AnyObject {
   func autoRepeat(repeat: Swift.Bool)
   func seekToStart(isEnabled: Swift.Bool)
   func createAudioDirectory()
+  func unload()
   var delegate: BanubaMusicEditorSDK.AudioPlayerDelegate? { get set }
 }
 public protocol AudioPlayerDelegate : AnyObject {
