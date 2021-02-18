@@ -72,10 +72,15 @@ public protocol MusicEditorExternalViewControllerFactory : AnyObject {
   func makeTrackSelectionViewController(selectedAudioItem: BanubaMusicEditorSDK.AudioItem?) -> BanubaMusicEditorSDK.TrackSelectionViewController?
   func makeEffectSelectionViewController(selectedAudioItem: BanubaMusicEditorSDK.AudioItem?) -> BanubaMusicEditorSDK.EffectSelectionViewController?
   func makeRecorderCountdownAnimatableView() -> BanubaMusicEditorSDK.MusicEditorCountdownAnimatableView?
+  var defaultCountDownAnimationView: BanubaMusicEditorSDK.MusicEditorCountdownAnimatableView? { get set }
 }
 extension MusicEditorExternalViewControllerFactory {
   public func makeTrackSelectionViewController() -> BanubaMusicEditorSDK.TrackSelectionViewController?
   public func makeEffectSelectionViewController() -> BanubaMusicEditorSDK.EffectSelectionViewController?
+  public var defaultCountDownAnimationView: BanubaMusicEditorSDK.MusicEditorCountdownAnimatableView? {
+    get
+    set
+  }
 }
 public protocol TrackSelectionViewControllerDelegate : AnyObject {
   func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didSelectFile url: Foundation.URL, title: Swift.String, id: Swift.Int64)
