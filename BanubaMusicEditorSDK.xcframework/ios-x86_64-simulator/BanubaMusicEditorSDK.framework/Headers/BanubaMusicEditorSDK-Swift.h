@@ -206,20 +206,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
-
-@class NSNumber;
+@class UIViewController;
 @class NSString;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC20BanubaMusicEditorSDK24MusicAlertViewController")
-@interface MusicAlertViewController : UIViewController
-- (void)viewWillAppear:(BOOL)animated;
+SWIFT_CLASS("_TtC20BanubaMusicEditorSDK32BaseTrackSelectionViewController")
+@interface BaseTrackSelectionViewController : UINavigationController
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 
 
