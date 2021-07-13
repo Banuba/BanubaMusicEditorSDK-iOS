@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaMusicEditorSDK
 import AVFoundation
 @_exported import BanubaMusicEditorSDK
@@ -10,11 +10,9 @@ import Swift
 import UIKit
 public protocol BanubaMusicEditorDelegate : AnyObject {
   func banubaMusicEditorDidDone(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
-  func banubaMusicEditorDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor)
+  func banubaMusicEditorDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
   func banubaMusicEditorNeedsToUpdatePlayer(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor)
   func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, didPresent message: Swift.String)
-  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, needsMicrophoneAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
-  func banubaMusicEditor(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, needsCameraAccessIn viewController: UIKit.UIViewController, completion: @escaping (Swift.Bool) -> Swift.Void)
 }
 public class BanubaMusicEditor {
   weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorDelegate?
@@ -205,9 +203,10 @@ public struct MainMusicViewControllerConfig {
   public var volumeLabel: BanubaMusicEditorSDK.TextButtonConfig
   public var tracksLimit: Swift.Int
   public var cursorColor: UIKit.UIColor
-  public var controlsBackgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
-  public var backgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
+  public var controlsBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
+  public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var timelineCornerRadius: CoreGraphics.CGFloat
+  public var alertConfig: BanubaUtilities.AlertViewConfiguration
 }
 public struct AudioRecorderViewControllerConfig {
   public var rewindToStartButton: BanubaMusicEditorSDK.ControlButtonConfig?
@@ -221,8 +220,8 @@ public struct AudioRecorderViewControllerConfig {
   public var startingRecordingTimerSeconds: Foundation.TimeInterval
   public var timerColor: UIKit.UIColor
   public var cursorColor: UIKit.UIColor
-  public var backgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
-  public var playerControlsBackgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
+  public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
+  public var playerControlsBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var timelineCornerRadius: CoreGraphics.CGFloat
 }
 public struct VideoTrackLineEditViewControllerConfig {
@@ -231,7 +230,7 @@ public struct VideoTrackLineEditViewControllerConfig {
   public var sliderTintColor: UIKit.UIColor
   public var mainLabelColors: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
-  public var backgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
+  public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var height: CoreGraphics.CGFloat
 }
 public struct AudioWaveConfiguration {
@@ -270,7 +269,7 @@ public struct AudioTrackLineEditViewControllerConfig {
   public var numberOfLinesInDraggers: Swift.Int
   public var draggerLinesSpacing: CoreGraphics.CGFloat
   public var draggersLineCornerRadius: CoreGraphics.CGFloat
-  public var backgroundConfiguration: BanubaMusicEditorSDK.BackgroundConfiguration
+  public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var voiceFilterConfiguration: BanubaMusicEditorSDK.VoiceFilterConfiguration?
   public var voiceFilterProvider: BanubaMusicEditorSDK.VoiceFilterProvider?
   public var isVoiceFilterHidden: Swift.Bool {
@@ -332,16 +331,11 @@ public struct ControlButtonConfig {
   public init(type: BanubaMusicEditorSDK.ControlButtonConfig.`Type`, imageName: Swift.String, selectedImageName: Swift.String?, imageEdgeInsets: UIKit.UIEdgeInsets? = nil)
 }
 public typealias TextButtonConfig = BanubaMusicEditorSDK.MusicEditor.TextButtonConfig
-public typealias BackgroundConfiguration = BanubaMusicEditorSDK.MusicEditor.BackgroundConfiguration
 public struct MusicEditor {
   public struct TextButtonConfig {
     public var font: UIKit.UIFont
     public var color: UIKit.UIColor
     public var title: Swift.String
-  }
-  public struct BackgroundConfiguration {
-    public var cornerRadius: CoreGraphics.CGFloat
-    public var color: UIKit.UIColor
   }
 }
 public struct VoiceFilterConfiguration {
@@ -369,17 +363,6 @@ public enum AudioTrackLinePosition : Swift.Int, Swift.CaseIterable {
     get
   }
   public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum CameraAlertType {
-  case discardChanges
-  public var title: Swift.String {
-    get
-  }
-  public static func == (a: BanubaMusicEditorSDK.CameraAlertType, b: BanubaMusicEditorSDK.CameraAlertType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
     get
   }
 }
