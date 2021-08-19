@@ -16,8 +16,8 @@ public protocol BanubaMusicEditorDelegate : AnyObject {
 }
 public class BanubaMusicEditor {
   weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorDelegate?
-  public init(audioEditorService: BanubaMusicEditorSDK.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaMusicEditorSDK.TimeLineDataSourceAdoptable, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: BanubaMusicEditorSDK.PlayablePreview, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
-  public func updatePreviewPlayer(player: BanubaMusicEditorSDK.PlayerAdoptable)
+  public init(audioEditorService: BanubaMusicEditorSDK.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaUtilities.TimeLineDataSource, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: BanubaUtilities.PlayablePreview, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
+  public func updatePreviewPlayer(player: BanubaUtilities.Playable)
   public func presentMusicEditor(from hostController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
   public func dismissMusicEditor(animated: Swift.Bool, completion: (() -> Swift.Void)?)
   @objc deinit
@@ -158,37 +158,15 @@ public protocol AudioTrackAdoptable : AnyObject {
   var isEditable: Swift.Bool { get set }
   init(url: Foundation.URL, originalURL: Foundation.URL, id: Swift.Int32, timeRange: CoreMedia.CMTimeRange, compositionStart: CoreMedia.CMTime, avURLAsset: AVFoundation.AVURLAsset, isAudioRecord: Swift.Bool, isEditable: Swift.Bool, title: Swift.String?, applyedFilterId: Swift.Int?)
 }
-public protocol PlayerAdoptable : AnyObject {
-  func startPlay(loop: Swift.Bool, fixedSpeed: Swift.Bool)
-  func startPlay(loop: Swift.Bool, fixedSpeed: Swift.Bool, start: CoreMedia.CMTime, end: CoreMedia.CMTime)
-  func pausePlay()
-  func stopPlay()
-  func resumePlay()
-  func previewLayer() -> AVFoundation.AVPlayerLayer
-  func smoothlySeek(to time: CoreMedia.CMTime)
-  func seek(to time: CoreMedia.CMTime)
-  func startStopPlay(loop: Swift.Bool, fixedSpeed: Swift.Bool)
-  func reloadPreview()
-  func reloadPreview(shouldAutoStart: Swift.Bool)
-  var currentTime: Foundation.TimeInterval { get }
-  var videoDuration: Swift.Double { get }
-  var currentTimeInCMTime: CoreMedia.CMTime { get }
-  var videoDurationCMTime: CoreMedia.CMTime { get }
-  var isPlaying: Swift.Bool { get }
-  var playerItem: AVFoundation.AVPlayerItem? { get }
-  var audioMix: AVFoundation.AVAudioMix? { get set }
-  var avPlayer: AVFoundation.AVPlayer { get }
-  var isMuted: Swift.Bool { get set }
-}
 public protocol VideoEditorServiceAdoptable : AnyObject {
   var isMultiAudioEnabled: Swift.Bool { get }
   func addMusicTrack(didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, id: Swift.Int32, start: CoreMedia.CMTime, duration: CoreMedia.CMTime?, trimmedStart: Foundation.TimeInterval?) -> (asset: AVFoundation.AVURLAsset, timeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, compositionStart: CoreMedia.CMTime, avAssetTrack: AVFoundation.AVAssetTrack)?
   func changeMusicTrackPosition(currentTime: Swift.Double, durationInSeconds: Swift.Double, compositionTimeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, assetTrack: AVFoundation.AVAssetTrack, audioTrack: BanubaMusicEditorSDK.AudioTrackAdoptable) -> CoreMedia.CMTimeRange?
   func musicTrackVolume(_ track: BanubaMusicEditorSDK.AudioTrackAdoptable) -> Swift.Float
-  func setMusicTrackVolume(_ track: BanubaMusicEditorSDK.AudioTrackAdoptable, volume: Swift.Float, to player: BanubaMusicEditorSDK.PlayerAdoptable)
+  func setMusicTrackVolume(_ track: BanubaMusicEditorSDK.AudioTrackAdoptable, volume: Swift.Float, to player: BanubaUtilities.Playable)
   func removeMusicTrack(_ track: BanubaMusicEditorSDK.AudioTrackAdoptable) -> Swift.Bool
   func videoTrackVolume() -> Swift.Float
-  func setVideoTrackVolume(_ volume: Swift.Float, to player: BanubaMusicEditorSDK.PlayerAdoptable)
+  func setVideoTrackVolume(_ volume: Swift.Float, to player: BanubaUtilities.Playable)
 }
 public struct MainMusicViewControllerConfig {
   public var editButtons: [BanubaMusicEditorSDK.EditButtonConfig]
@@ -390,40 +368,4 @@ public struct MusicEditorConfig {
   public var audioRecorderViewControllerConfig: BanubaMusicEditorSDK.AudioRecorderViewControllerConfig
   public init()
   public init(mainMusicViewControllerConfig: BanubaMusicEditorSDK.MainMusicViewControllerConfig, videoTrackLineEditControllerConfig: BanubaMusicEditorSDK.VideoTrackLineEditViewControllerConfig, audioTrackLineEditControllerConfig: BanubaMusicEditorSDK.AudioTrackLineEditViewControllerConfig, audioRecorderViewControllerConfig: BanubaMusicEditorSDK.AudioRecorderViewControllerConfig)
-}
-public protocol TimeLineDataSourceAdoptable : AnyObject {
-  var durationInSeconds: Swift.Float64 { get }
-  var thumbnails: [UIKit.UIImage] { get }
-  var isAllThumbnailsFetched: Swift.Bool { get }
-  var asset: AVFoundation.AVAsset { get }
-  var thumbnailsCount: Swift.Int { get }
-  var thumbnailHeight: CoreGraphics.CGFloat { get }
-  var delegate: BanubaMusicEditorSDK.TimelineDataSourceAdoptableDelegate? { get set }
-  func loadPreview(completion: @escaping (UIKit.UIImage?) -> Swift.Void, at second: Swift.Double)
-  func getImage(at index: Swift.Int) -> UIKit.UIImage?
-}
-public protocol TimelineDataSourceAdoptableDelegate : AnyObject {
-  func didFinishThumbnailFetch()
-}
-public protocol PlayablePreview : AnyObject {
-  func startStopPlay(loop: Swift.Bool, fixedSpeed: Swift.Bool)
-  func startPlay(loop: Swift.Bool, fixedSpeed: Swift.Bool)
-  func stopPlay()
-  func pausePlay()
-  func resumePlay()
-  func smoothlySeek(to time: CoreMedia.CMTime)
-  func seek(to time: CoreMedia.CMTime)
-  func reloadPreview(shouldAutoStart: Swift.Bool)
-  var currentTime: Foundation.TimeInterval { get }
-  var videoDuration: Swift.Double { get }
-  var currentTimeInCMTime: CoreMedia.CMTime { get }
-  var videoDurationInCMTime: CoreMedia.CMTime { get }
-  var playerDelegate: BanubaMusicEditorSDK.PlayerDelegate? { get set }
-  var adoptablePlayer: BanubaMusicEditorSDK.PlayerAdoptable? { get set }
-  var isPlaying: Swift.Bool { get }
-  var previewView: UIKit.UIView { get }
-}
-public protocol PlayerDelegate : AnyObject {
-  func playerPlaysFrameAtTime(_ time: CoreMedia.CMTime)
-  func didEndPlaying()
 }
