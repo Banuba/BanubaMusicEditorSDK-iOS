@@ -604,8 +604,6 @@ SWIFT_CLASS("_TtC20BanubaMusicEditorSDK17MusicEditorConfig")
 ///
 /// \param audioRecorderViewControllerConfig AudioRecorderViewControllerConfig setups audio recorder style
 ///
-/// \param isAudioBrowserEnabled Is audio browser enabled. (audioBrowser framework exist only)
-///
 - (nonnull instancetype)initWithMainMusicViewControllerConfig:(MainMusicViewControllerConfig * _Nonnull)mainMusicViewControllerConfig videoTrackLineEditControllerConfig:(VideoTrackLineEditViewControllerConfig * _Nonnull)videoTrackLineEditControllerConfig audioTrackLineEditControllerConfig:(AudioTrackLineEditViewControllerConfig * _Nonnull)audioTrackLineEditControllerConfig audioRecorderViewControllerConfig:(AudioRecorderViewControllerConfig * _Nonnull)audioRecorderViewControllerConfig OBJC_DESIGNATED_INITIALIZER;
 @end
 
