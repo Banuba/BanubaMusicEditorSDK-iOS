@@ -183,6 +183,8 @@ public struct MainMusicViewControllerConfig {
   public var cursorColor: UIKit.UIColor
   public var controlsBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
+  public var previewViewBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
+  public var videoControlsViewBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var timelineCornerRadius: CoreGraphics.CGFloat
   public var alertConfig: BanubaUtilities.AlertViewConfiguration
 }
@@ -201,6 +203,7 @@ public struct AudioRecorderViewControllerConfig {
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var playerControlsBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var timelineCornerRadius: CoreGraphics.CGFloat
+  public var resetButton: BanubaUtilities.RoundedButtonConfiguration
 }
 public struct VideoTrackLineEditViewControllerConfig {
   public var doneButtonImageName: Swift.String
