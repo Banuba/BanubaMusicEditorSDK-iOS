@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaMusicEditorSDK
 import AVFoundation
 @_exported import BanubaMusicEditorSDK
@@ -8,6 +8,7 @@ import CoreGraphics
 import Foundation
 import Swift
 import UIKit
+import _Concurrency
 public protocol BanubaMusicEditorDelegate : AnyObject {
   func banubaMusicEditorDidDone(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
   func banubaMusicEditorDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaMusicEditorSDK.AudioTrackAdoptable]?)
@@ -63,6 +64,9 @@ public enum VoiceEffects : Swift.Int {
 public typealias AVAudioEngineUnitSettings = [BanubaMusicEditorSDK.AVAudioEngineUnitParameter : Swift.Float]
 public typealias AVAudioEngineFilterSetting = [BanubaMusicEditorSDK.AVAudioEngineUnit : BanubaMusicEditorSDK.AVAudioEngineUnitSettings]
 public struct VoiceFilter : Swift.Equatable {
+  public var id: Swift.Int {
+    get
+  }
   public let type: BanubaMusicEditorSDK.VoiceEffects
   public var title: Swift.String?
   public var color: UIKit.UIColor
@@ -87,7 +91,7 @@ public protocol AudioWriterAdoptable : AnyObject {
   func stopCapturing()
   func setAudioCategory(_ category: AVFAudio.AVAudioSession.Category)
 }
-extension Double {
+extension Swift.Double {
   public func stringFromTimeInterval(isMiliSecondsEnabled: Swift.Bool = true) -> Swift.String
 }
 public protocol AudioItem {
@@ -102,7 +106,7 @@ public protocol MusicEditorExternalViewControllerFactory : AnyObject {
   func makeEffectSelectionViewController(selectedAudioItem: BanubaMusicEditorSDK.AudioItem?) -> BanubaMusicEditorSDK.EffectSelectionViewController?
   func makeRecorderCountdownAnimatableView() -> BanubaMusicEditorSDK.MusicEditorCountdownAnimatableView?
 }
-extension MusicEditorExternalViewControllerFactory {
+extension BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory {
   public var audioBrowserController: BanubaMusicEditorSDK.TrackSelectionViewController? {
     get
     set(newValue)
@@ -115,19 +119,19 @@ public protocol TrackSelectionViewControllerDelegate : AnyObject {
   func trackSelectionViewControllerDidCancel(viewController: BanubaMusicEditorSDK.TrackSelectionViewController)
   func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWithId trackId: Swift.Int32)
 }
-extension TrackSelectionViewControllerDelegate {
+extension BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate {
   public func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWithId trackId: Swift.Int32)
 }
 public protocol TrackSelectionViewController : UIKit.UIViewController {
   var trackSelectionDelegate: BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate? { get set }
 }
-@_inheritsConvenienceInitializers @objc open class BaseTrackSelectionViewController : UIKit.UINavigationController, BanubaMusicEditorSDK.TrackSelectionViewController {
-  weak public var trackSelectionDelegate: BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate?
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class BaseTrackSelectionViewController : UIKit.UINavigationController, BanubaMusicEditorSDK.TrackSelectionViewController {
+  @_Concurrency.MainActor(unsafe) weak public var trackSelectionDelegate: BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate?
   @available(iOS 5.0, *)
-  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
-  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 public protocol EffectSelectionViewControllerDelegate : AnyObject {
