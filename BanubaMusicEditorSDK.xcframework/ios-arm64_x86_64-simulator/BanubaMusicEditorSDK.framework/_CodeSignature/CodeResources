@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		zl6lmHA33ElVWyWSQi2K8IvTnXc=
+		C/naNv7Zoa7ahOhHRnYv2lNNFSA=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		k7rFqbayZDjyPE8OcJUOKYEkxkI=
+		M1esqspWlvuQEx7zMy0EY4dasJ0=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		k7rFqbayZDjyPE8OcJUOKYEkxkI=
+		M1esqspWlvuQEx7zMy0EY4dasJ0=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		DbGlS17zHKNGGbHYVw49lXKDFPE=
+		0XSKCmd3s5H1gqHbr8rajXxAxqk=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		DbGlS17zHKNGGbHYVw49lXKDFPE=
+		0XSKCmd3s5H1gqHbr8rajXxAxqk=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pWjvQfC/HWNdTxa+f2MmTFCOP3o=
+		/K4uRJ9IY6rocjUaVXDb8wh+q8o=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		pWjvQfC/HWNdTxa+f2MmTFCOP3o=
+		/K4uRJ9IY6rocjUaVXDb8wh+q8o=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rXGhJjRW0q98Gbn+la0HGxZGvz0=
+		7zKC1FnXNmKZAxRMfeH4WtyWdxg=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		rXGhJjRW0q98Gbn+la0HGxZGvz0=
+		7zKC1FnXNmKZAxRMfeH4WtyWdxg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R1ZLKEfUjwsX8WxCpD/BSFpUR6TNBQJsPjorobtu8v4=
+			oScDYntcKiADgfmE9gkRQeKEgQZykYFuecZoRaC40CI=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib</key>
@@ -271,28 +271,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b1PEPyGORg9GvuNDhk3A3F3cIfPTPjzJYzj5V78nGTs=
+			lsttL3aK5oqJkB3yQOZDbhddK4tvIX87hdaDcglz4oQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b1PEPyGORg9GvuNDhk3A3F3cIfPTPjzJYzj5V78nGTs=
+			lsttL3aK5oqJkB3yQOZDbhddK4tvIX87hdaDcglz4oQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qv6S5+7RbRupETmhw2aezMjHEtw2wHUm0d5wEyyFBZs=
+			DAXPYdFZRbvnYYCw91iemeB7GTi/Q5QIODDa6X5uKCw=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qv6S5+7RbRupETmhw2aezMjHEtw2wHUm0d5wEyyFBZs=
+			DAXPYdFZRbvnYYCw91iemeB7GTi/Q5QIODDa6X5uKCw=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FzY+HgO1voK1rvaqkirlzDOIroUbFmopOGp3YJCALHs=
+			yreg0bxjv+MaT9CR+8uXsZ08nL0xvU4zC8fQshRbmRg=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftdoc</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FzY+HgO1voK1rvaqkirlzDOIroUbFmopOGp3YJCALHs=
+			yreg0bxjv+MaT9CR+8uXsZ08nL0xvU4zC8fQshRbmRg=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Jms2yG9CvxXNQCXM1u8cJwBuU+ucT2tVSWwmzZ3hlw=
+			hDexjensOvjCH9Tys55RhI3hVfJOlmHCag2PrGw3bpM=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -376,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Jms2yG9CvxXNQCXM1u8cJwBuU+ucT2tVSWwmzZ3hlw=
+			hDexjensOvjCH9Tys55RhI3hVfJOlmHCag2PrGw3bpM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
