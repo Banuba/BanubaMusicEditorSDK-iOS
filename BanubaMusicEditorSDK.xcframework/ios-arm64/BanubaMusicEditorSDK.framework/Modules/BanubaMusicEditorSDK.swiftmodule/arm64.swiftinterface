@@ -8,6 +8,7 @@ import CoreGraphics
 import Foundation
 import Swift
 import UIKit
+import VEPlaybackSDK
 import _Concurrency
 public protocol BanubaMusicEditorDelegate : AnyObject {
   func banubaMusicEditorDidDone(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaUtilities.AudioTrackAdoptable]?)
@@ -17,8 +18,8 @@ public protocol BanubaMusicEditorDelegate : AnyObject {
 }
 public class BanubaMusicEditor {
   weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorDelegate?
-  public init(audioEditorService: BanubaUtilities.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaUtilities.TimeLineDataSource, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: BanubaUtilities.PlayablePreview, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaUtilities.AudioTrackAdoptable]?)
-  public func updatePreviewPlayer(player: BanubaUtilities.Playable)
+  public init(audioEditorService: BanubaUtilities.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaUtilities.TimeLineDataSource, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: VEPlaybackSDK.PlayableViewController, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaUtilities.AudioTrackAdoptable]?)
+  public func updatePreviewPlayer(player: BanubaUtilities.VideoEditorPlayable)
   public func presentMusicEditor(from hostController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
   public func dismissMusicEditor(animated: Swift.Bool, completion: (() -> Swift.Void)?)
   @objc deinit
@@ -130,7 +131,7 @@ public protocol EffectSelectionViewControllerDelegate : AnyObject {
   func effectSelectionViewControllerDidCancel(viewController: BanubaMusicEditorSDK.EffectSelectionViewController)
 }
 public protocol EffectSelectionViewController : UIKit.UIViewController {
-  var delegate: BanubaMusicEditorSDK.EffectSelectionViewControllerDelegate? { get set }
+  var effectSelectionDelegate: BanubaMusicEditorSDK.EffectSelectionViewControllerDelegate? { get set }
 }
 public protocol MusicEditorCountdownAnimatableView : UIKit.UIView {
   var countdownDigit: Swift.Int { get set }
@@ -142,10 +143,10 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   func addMusicTrack(didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, id: Swift.Int32, start: CoreMedia.CMTime, duration: CoreMedia.CMTime?, trimmedStart: Foundation.TimeInterval?) -> (asset: AVFoundation.AVURLAsset, timeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, compositionStart: CoreMedia.CMTime, avAssetTrack: AVFoundation.AVAssetTrack)?
   func changeMusicTrackPosition(currentTime: Swift.Double, durationInSeconds: Swift.Double, compositionTimeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, assetTrack: AVFoundation.AVAssetTrack, audioTrack: BanubaUtilities.AudioTrackAdoptable) -> CoreMedia.CMTimeRange?
   func musicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable) -> Swift.Float
-  func setMusicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable, volume: Swift.Float, to player: BanubaUtilities.Playable)
+  func setMusicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable, volume: Swift.Float, to player: BanubaUtilities.VideoEditorPlayable)
   func removeMusicTrack(_ track: BanubaUtilities.AudioTrackAdoptable) -> Swift.Bool
   func videoTrackVolume() -> Swift.Float
-  func setVideoTrackVolume(_ volume: Swift.Float, to player: BanubaUtilities.Playable)
+  func setVideoTrackVolume(_ volume: Swift.Float, to player: BanubaUtilities.VideoEditorPlayable)
 }
 public struct MainMusicViewControllerConfig {
   public var editButtons: [BanubaMusicEditorSDK.EditButtonConfig]
