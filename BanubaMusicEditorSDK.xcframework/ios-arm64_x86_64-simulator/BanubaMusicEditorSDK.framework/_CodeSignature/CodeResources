@@ -50,7 +50,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8cOfA3DbHkBVJ5sHVyfCtcswNuk=
+		H8i04lnovsbGq+BOGZ47YY+pdsc=
 		</data>
 		<key>MainMusicViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-12.3+.nib</key>
 		<data>
@@ -74,19 +74,19 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ES5SUlF777OhzPvm/7d2Me37ncI=
+		6rOlSB7/19rx5p0wtmftdusGEVc=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		ES5SUlF777OhzPvm/7d2Me37ncI=
+		6rOlSB7/19rx5p0wtmftdusGEVc=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		LYtgEGe1aVeqP2Key+7aHBragAg=
+		Mzyw2jIR6gqjt8HUZJMjcNCe0Ko=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		LYtgEGe1aVeqP2Key+7aHBragAg=
+		Mzyw2jIR6gqjt8HUZJMjcNCe0Ko=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VbEgMpGuTfl6EkSqJ7OwmuofOFs=
+		rF6uGPnFbPcJ6oz1eIw3OwfHWfg=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		VbEgMpGuTfl6EkSqJ7OwmuofOFs=
+		rF6uGPnFbPcJ6oz1eIw3OwfHWfg=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lu9YsmP4E2MB8WOOl78X7paZSfE=
+		38xIZornvVdONjKixtBkzNDWEd4=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		lu9YsmP4E2MB8WOOl78X7paZSfE=
+		38xIZornvVdONjKixtBkzNDWEd4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -271,28 +271,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PU03IdZmPRmpio12P4WiiwxyRsVrMvJAnzA2SBYcSKA=
+			DBfjiKAu1NqPWF0uJaAbpsTBUhWcxmk24ZqyKXczwFA=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PU03IdZmPRmpio12P4WiiwxyRsVrMvJAnzA2SBYcSKA=
+			DBfjiKAu1NqPWF0uJaAbpsTBUhWcxmk24ZqyKXczwFA=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a2OPnhJjKiADsH0m8xbFmRuWHHYqZpODvZOVSm0VU8Q=
+			vL177qjr5C5TH4m3IabLitdbv5rPgiG3cas1x1Fxeh8=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a2OPnhJjKiADsH0m8xbFmRuWHHYqZpODvZOVSm0VU8Q=
+			vL177qjr5C5TH4m3IabLitdbv5rPgiG3cas1x1Fxeh8=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -313,7 +313,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eNo0KLfWKuluBfuqxiPF0NCGiVgkQuOoLonStixVhOY=
+			+7nlwsg8ZB2dGntmMGnmuTGUpB+EwNYuZ5a/bQK7g+U=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64.swiftdoc</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eNo0KLfWKuluBfuqxiPF0NCGiVgkQuOoLonStixVhOY=
+			+7nlwsg8ZB2dGntmMGnmuTGUpB+EwNYuZ5a/bQK7g+U=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y91XccwHLTyf4y5AqNmeuckP03q+REvMUh3dEkqqRFU=
+			yvRvLbfOYvc+Pj32zYoFTfF3INPIF8dGTt5M0cuKGl8=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -376,7 +376,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y91XccwHLTyf4y5AqNmeuckP03q+REvMUh3dEkqqRFU=
+			yvRvLbfOYvc+Pj32zYoFTfF3INPIF8dGTt5M0cuKGl8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
