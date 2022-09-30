@@ -6,6 +6,6 @@ framework module BanubaMusicEditorSDK {
 }
 
 module BanubaMusicEditorSDK.Swift {
-    header "BanubaMusicEditorSDK-Swift.h"
-    requires objc
+  header "BanubaMusicEditorSDK-Swift.h"
+  requires objc
 }

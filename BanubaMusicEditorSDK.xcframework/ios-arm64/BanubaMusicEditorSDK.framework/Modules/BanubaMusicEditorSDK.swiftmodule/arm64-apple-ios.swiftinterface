@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaMusicEditorSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 @_exported import BanubaMusicEditorSDK
 import BanubaUtilities
@@ -10,6 +11,7 @@ import Swift
 import UIKit
 import VEPlaybackSDK
 import _Concurrency
+import _StringProcessing
 public protocol BanubaMusicEditorDelegate : AnyObject {
   func banubaMusicEditorDidDone(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaUtilities.AudioTrackAdoptable]?)
   func banubaMusicEditorDidCancel(musicEditor: BanubaMusicEditorSDK.BanubaMusicEditor, withTracks tracks: [BanubaUtilities.AudioTrackAdoptable]?)
@@ -150,10 +152,10 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
 }
 public struct MainMusicViewControllerConfig {
   public var editButtons: [BanubaMusicEditorSDK.EditButtonConfig]
-  public var editButtonsHeight: CoreGraphics.CGFloat
+  public var editButtonsHeight: CoreFoundation.CGFloat
   public var editCompositionButtons: [BanubaMusicEditorSDK.EditCompositionButtonConfig]
   public var controlButtons: [BanubaMusicEditorSDK.ControlButtonConfig]
-  public var playerControlsHeight: CoreGraphics.CGFloat
+  public var playerControlsHeight: CoreFoundation.CGFloat
   public var audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration
   public var mainLabelColors: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
@@ -165,13 +167,13 @@ public struct MainMusicViewControllerConfig {
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var previewViewBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var videoControlsViewBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
-  public var timelineCornerRadius: CoreGraphics.CGFloat
+  public var timelineCornerRadius: CoreFoundation.CGFloat
   public var alertConfig: BanubaUtilities.AlertViewConfiguration
 }
 public struct AudioRecorderViewControllerConfig {
   public var rewindToStartButton: BanubaMusicEditorSDK.ControlButtonConfig?
   public var playPauseButton: BanubaMusicEditorSDK.ControlButtonConfig
-  public var playerControlsHeight: CoreGraphics.CGFloat
+  public var playerControlsHeight: CoreFoundation.CGFloat
   public var recordButton: BanubaMusicEditorSDK.ControlButtonConfig
   public var backButtonImage: Swift.String
   public var doneButtonImage: Swift.String
@@ -182,7 +184,7 @@ public struct AudioRecorderViewControllerConfig {
   public var cursorColor: UIKit.UIColor
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var playerControlsBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
-  public var timelineCornerRadius: CoreGraphics.CGFloat
+  public var timelineCornerRadius: CoreFoundation.CGFloat
   public var resetButton: BanubaUtilities.RoundedButtonConfiguration
 }
 public struct VideoTrackLineEditViewControllerConfig {
@@ -192,20 +194,20 @@ public struct VideoTrackLineEditViewControllerConfig {
   public var mainLabelColors: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
-  public var height: CoreGraphics.CGFloat
+  public var height: CoreFoundation.CGFloat
 }
 public struct AudioWaveConfiguration {
   public var isRandomWaveColor: Swift.Bool
   public var backgroundColor: UIKit.UIColor?
   public var waveBorderColor: UIKit.UIColor
-  public var waveCornerRadius: CoreGraphics.CGFloat
+  public var waveCornerRadius: CoreFoundation.CGFloat
   public var waveLinesColor: UIKit.UIColor
-  public var borderWidth: CoreGraphics.CGFloat
-  public var height: CoreGraphics.CGFloat
-  public var maxWaveHeight: CoreGraphics.CGFloat
+  public var borderWidth: CoreFoundation.CGFloat
+  public var height: CoreFoundation.CGFloat
+  public var maxWaveHeight: CoreFoundation.CGFloat
   public var audioTitleFont: UIKit.UIFont?
   public var audioTitleColor: UIKit.UIColor?
-  public var bottomOffset: CoreGraphics.CGFloat
+  public var bottomOffset: CoreFoundation.CGFloat
 }
 public struct AudioTrackLineEditViewControllerConfig {
   public var audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration
@@ -214,22 +216,22 @@ public struct AudioTrackLineEditViewControllerConfig {
   public var sliderTintColor: UIKit.UIColor
   public var draggersColor: UIKit.UIColor
   public var draggerImageName: Swift.String?
-  public var trimHeight: CoreGraphics.CGFloat
+  public var trimHeight: CoreFoundation.CGFloat
   public var trimBorderColor: UIKit.UIColor
-  public var trimBorderWidth: CoreGraphics.CGFloat
-  public var cursorHeight: CoreGraphics.CGFloat
+  public var trimBorderWidth: CoreFoundation.CGFloat
+  public var cursorHeight: CoreFoundation.CGFloat
   public var dimViewColor: UIKit.UIColor
   public var mainLabelColors: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
   public var cursorColor: UIKit.UIColor
-  public var draggersWidth: CoreGraphics.CGFloat
+  public var draggersWidth: CoreFoundation.CGFloat
   public var draggersLineColor: UIKit.UIColor
-  public var draggersCornerRadius: CoreGraphics.CGFloat
-  public var draggersLineWidth: CoreGraphics.CGFloat
-  public var draggersLineHeight: CoreGraphics.CGFloat
+  public var draggersCornerRadius: CoreFoundation.CGFloat
+  public var draggersLineWidth: CoreFoundation.CGFloat
+  public var draggersLineHeight: CoreFoundation.CGFloat
   public var numberOfLinesInDraggers: Swift.Int
-  public var draggerLinesSpacing: CoreGraphics.CGFloat
-  public var draggersLineCornerRadius: CoreGraphics.CGFloat
+  public var draggerLinesSpacing: CoreFoundation.CGFloat
+  public var draggersLineCornerRadius: CoreFoundation.CGFloat
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var voiceFilterConfiguration: BanubaMusicEditorSDK.VoiceFilterConfiguration?
   public var voiceFilterProvider: BanubaMusicEditorSDK.VoiceFilterProvider?
@@ -300,17 +302,17 @@ public struct MusicEditor {
   }
 }
 public struct VoiceFilterConfiguration {
-  public var cornerRadius: CoreGraphics.CGFloat
-  public var imageCornerRadius: CoreGraphics.CGFloat
+  public var cornerRadius: CoreFoundation.CGFloat
+  public var imageCornerRadius: CoreFoundation.CGFloat
   public var imageEdgeInsets: UIKit.UIEdgeInsets
-  public var selectionBorderWidth: CoreGraphics.CGFloat
+  public var selectionBorderWidth: CoreFoundation.CGFloat
   public var selectionColor: UIKit.UIColor
   public var font: UIKit.UIFont
   public var textColor: UIKit.UIColor
   public var noneFilterTitle: Swift.String?
   public var noneFilterImageName: Swift.String
   public var availableVoiceFilterIDs: [Swift.Int]?
-  public init(cornerRadius: CoreGraphics.CGFloat, imageCornerRadius: CoreGraphics.CGFloat, imageEdgeInsets: UIKit.UIEdgeInsets, selectionBorderWidth: CoreGraphics.CGFloat, selectionColor: UIKit.UIColor, font: UIKit.UIFont, textColor: UIKit.UIColor, noneFilterTitle: Swift.String?, noneFilterImageName: Swift.String)
+  public init(cornerRadius: CoreFoundation.CGFloat, imageCornerRadius: CoreFoundation.CGFloat, imageEdgeInsets: UIKit.UIEdgeInsets, selectionBorderWidth: CoreFoundation.CGFloat, selectionColor: UIKit.UIColor, font: UIKit.UIFont, textColor: UIKit.UIColor, noneFilterTitle: Swift.String?, noneFilterImageName: Swift.String)
 }
 public struct MusicEditorConfig {
   public var mainMusicViewControllerConfig: BanubaMusicEditorSDK.MainMusicViewControllerConfig
