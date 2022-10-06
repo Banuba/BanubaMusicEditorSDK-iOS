@@ -57391,6 +57391,49 @@
           {
             "kind": "Function",
             "name": "collectionView",
+            "printedName": "collectionView(_:willDisplay:forItemAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UICollectionView",
+                "printedName": "UIKit.UICollectionView",
+                "usr": "c:objc(cs)UICollectionView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UICollectionViewCell",
+                "printedName": "UIKit.UICollectionViewCell",
+                "usr": "c:objc(cs)UICollectionViewCell"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IndexPath",
+                "printedName": "Foundation.IndexPath",
+                "usr": "s:10Foundation9IndexPathV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BanubaMusicEditorSDK@objc(cs)VoiceFiltersCollectionViewHandler(im)collectionView:willDisplayCell:forItemAtIndexPath:",
+            "mangledName": "$s20BanubaMusicEditorSDK33VoiceFiltersCollectionViewHandlerC010collectionH0_11willDisplay9forItemAtySo012UICollectionH0C_So0pH4CellC10Foundation9IndexPathVtF",
+            "moduleName": "BanubaMusicEditorSDK",
+            "isOpen": true,
+            "objc_name": "collectionView:willDisplayCell:forItemAtIndexPath:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "collectionView",
             "printedName": "collectionView(_:layout:minimumInteritemSpacingForSectionAt:)",
             "children": [
               {
