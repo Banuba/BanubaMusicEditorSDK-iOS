@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name BanubaMusicEditorSDK
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BanubaMusicEditorSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 @_exported import BanubaMusicEditorSDK
@@ -95,16 +95,11 @@ public protocol AudioWriterAdoptable : AnyObject {
   func setAudioCategory(_ category: AVFAudio.AVAudioSession.Category)
 }
 public protocol MusicEditorExternalViewControllerFactory : AnyObject {
-  var audioBrowserController: BanubaMusicEditorSDK.TrackSelectionViewController? { get set }
   func makeTrackSelectionViewController(selectedAudioItem: BanubaUtilities.AudioItem?) -> BanubaMusicEditorSDK.TrackSelectionViewController?
   func makeEffectSelectionViewController(selectedAudioItem: BanubaUtilities.AudioItem?) -> BanubaMusicEditorSDK.EffectSelectionViewController?
   func makeRecorderCountdownAnimatableView() -> BanubaMusicEditorSDK.MusicEditorCountdownAnimatableView?
 }
 extension BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory {
-  public var audioBrowserController: BanubaMusicEditorSDK.TrackSelectionViewController? {
-    get
-    set
-  }
   public func makeTrackSelectionViewController() -> BanubaMusicEditorSDK.TrackSelectionViewController?
   public func makeEffectSelectionViewController() -> BanubaMusicEditorSDK.EffectSelectionViewController?
 }
