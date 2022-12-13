@@ -16107,749 +16107,749 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
       "kind": "FloatLiteral",
       "offset": 250,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
       "kind": "FloatLiteral",
       "offset": 313,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
       "kind": "FloatLiteral",
       "offset": 353,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
       "kind": "IntegerLiteral",
       "offset": 396,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AutoscrollManager.swift",
       "kind": "FloatLiteral",
       "offset": 450,
       "length": 6,
       "value": "0.0001"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/CountdownAnimatableButton.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/CountdownAnimatableButton.swift",
       "kind": "BooleanLiteral",
       "offset": 548,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/CountdownAnimatableButton.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/CountdownAnimatableButton.swift",
       "kind": "IntegerLiteral",
       "offset": 590,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 532,
       "length": 3,
       "value": "303"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 551,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 3,
       "value": "305"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 592,
       "length": 3,
       "value": "306"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 532,
       "length": 3,
       "value": "303"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 551,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 3,
       "value": "305"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 592,
       "length": 3,
       "value": "306"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 515,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 532,
       "length": 3,
       "value": "303"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 551,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 3,
       "value": "305"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
       "offset": 592,
       "length": 3,
       "value": "306"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "Dictionary",
       "offset": 1031,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/MainMusicViewControllerInteractor.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/MainMusicViewControllerInteractor.swift",
       "kind": "Array",
       "offset": 772,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/MainMusicViewControllerInteractor.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/MainMusicViewControllerInteractor.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 33,
       "value": "\"BanubaMusicEditorSDK.MainMusicViewControllerInteractor\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 288,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 3072,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 3485,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "StringLiteral",
       "offset": 2518,
       "length": 32,
       "value": "\"BanubaMusicEditorSDK.MainMusicViewControllerPresenter\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 9426,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "StringLiteral",
       "offset": 238,
       "length": 30,
       "value": "\"EditButtonCollectionViewCell\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "FloatLiteral",
       "offset": 317,
       "length": 5,
       "value": "57.25"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 572,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 735,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 886,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "BooleanLiteral",
       "offset": 1039,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/EditButtonsCollectionViewHandler.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 32,
       "value": "\"BanubaMusicEditorSDK.EditButtonsCollectionViewHandler\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/AudioRecorderViewControllerInteractor.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/AudioRecorderViewControllerInteractor.swift",
       "kind": "StringLiteral",
       "offset": 1003,
       "length": 37,
       "value": "\"BanubaMusicEditorSDK.AudioRecorderViewControllerInteractor\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Main\/MainMusicViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Main\/MainMusicViewController.swift",
       "kind": "FloatLiteral",
       "offset": 228,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
       "kind": "StringLiteral",
       "offset": 538,
       "length": 41,
       "value": "\"BanubaMusicEditorSDK.VideoTrackLineEditViewControllerPresenter\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
       "kind": "FloatLiteral",
       "offset": 298,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
       "kind": "FloatLiteral",
       "offset": 1379,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
       "kind": "FloatLiteral",
       "offset": 1423,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
       "kind": "BooleanLiteral",
       "offset": 1268,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
       "kind": "BooleanLiteral",
       "offset": 1466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/AudioTrackLineView.swift",
       "kind": "BooleanLiteral",
       "offset": 1710,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Player\/AudioWave\/AudioContext.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Player\/AudioWave\/AudioContext.swift",
       "kind": "FloatLiteral",
       "offset": 228,
       "length": 4,
       "value": "55.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "FloatLiteral",
       "offset": 255,
       "length": 5,
       "value": "220.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "FloatLiteral",
       "offset": 320,
       "length": 4,
       "value": "25.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "FloatLiteral",
       "offset": 373,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "FloatLiteral",
       "offset": 433,
       "length": 4,
       "value": "13.5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "FloatLiteral",
       "offset": 493,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "FloatLiteral",
       "offset": 557,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Edit\/AudioTrackLineEditViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3132,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 26,
       "value": "\"BanubaMusicEditorSDK.EditorNavigationController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 26,
       "value": "\"BanubaMusicEditorSDK.EditorNavigationController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
       "kind": "StringLiteral",
       "offset": 601,
       "length": 26,
       "value": "\"BanubaMusicEditorSDK.EditorNavigationController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/VoiceFilterCollectionViewCell.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/VoiceFilterCollectionViewCell.swift",
       "kind": "FloatLiteral",
       "offset": 907,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/VoiceFilterCollectionViewCell.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/VoiceFilterCollectionViewCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1679,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/VoiceFilterCollectionViewCell.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/UIEntities\/VoiceFilterCollectionViewCell.swift",
       "kind": "BooleanLiteral",
       "offset": 2174,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 308,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 347,
       "length": 5,
       "value": "100.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 394,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 441,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioTrackLineEditViewControllerPresenter.swift",
       "kind": "StringLiteral",
       "offset": 1351,
       "length": 41,
       "value": "\"BanubaMusicEditorSDK.AudioTrackLineEditViewControllerPresenter\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/AudioTrackLineEditViewControllerInteractor.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/AudioTrackLineEditViewControllerInteractor.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 42,
       "value": "\"BanubaMusicEditorSDK.AudioTrackLineEditViewControllerInteractor\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 25,
       "value": "\"MainMusicViewController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
       "kind": "StringLiteral",
       "offset": 302,
       "length": 34,
       "value": "\"VideoTrackLineEditViewController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 34,
       "value": "\"AudioTrackLineEditViewController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/ViewControllerFactory.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 29,
       "value": "\"AudioRecorderViewController\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioRecorderViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioRecorderViewControllerPresenter.swift",
       "kind": "FloatLiteral",
       "offset": 304,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioRecorderViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioRecorderViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 1956,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioRecorderViewControllerPresenter.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/AudioRecorderViewControllerPresenter.swift",
       "kind": "StringLiteral",
       "offset": 1528,
       "length": 36,
       "value": "\"BanubaMusicEditorSDK.AudioRecorderViewControllerPresenter\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 31,
       "value": "\"VoiceFilterCollectionViewCell\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
       "kind": "FloatLiteral",
       "offset": 317,
       "length": 4,
       "value": "64.0"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
       "kind": "FloatLiteral",
       "offset": 365,
       "length": 3,
       "value": "5.5"
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Helpers\/VoiceFiltersCollectionViewHandler.swift",
       "kind": "StringLiteral",
       "offset": 555,
       "length": 33,
       "value": "\"BanubaMusicEditorSDK.VoiceFiltersCollectionViewHandler\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/VideoTrackLineEditViewControllerInteractor.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Interactors\/VideoTrackLineEditViewControllerInteractor.swift",
       "kind": "StringLiteral",
       "offset": 292,
       "length": 42,
       "value": "\"BanubaMusicEditorSDK.VideoTrackLineEditViewControllerInteractor\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 20,
       "value": "\"MusicEditor.Delete\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 262,
       "length": 32,
       "value": "\"Edit track volume button title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 25,
       "value": "\"MusicEditor.VoiceEffect\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 32,
       "value": "\"Edit track volume button title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 476,
       "length": 18,
       "value": "\"MusicEditor.Edit\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 505,
       "length": 25,
       "value": "\"Edit track button title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 586,
       "length": 20,
       "value": "\"MusicEditor.Tracks\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 617,
       "length": 24,
       "value": "\"Add track button title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 698,
       "length": 21,
       "value": "\"MusicEditor.Effects\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 730,
       "length": 26,
       "value": "\"Add effects button title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 812,
       "length": 20,
       "value": "\"MusicEditor.Record\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 26,
       "value": "\"Add effects button title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 921,
       "length": 25,
       "value": "\"MusicEditor.VideoVolume\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 957,
       "length": 20,
       "value": "\"Video volume title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1031,
       "length": 22,
       "value": "\"MusicEditor.Duration\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1064,
       "length": 22,
       "value": "\"Audio duration title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1141,
       "length": 50,
       "value": "\"com.banuba.musicEditor.mainScreen.resetAll.title\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1202,
       "length": 45,
       "value": "\"Confirmation message for discarding changes\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1304,
       "length": 52,
       "value": "\"com.banuba.musicEditor.mainScreen.resetAll.message\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1367,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1435,
       "length": 6,
       "value": "\"Undo\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1452,
       "length": 55,
       "value": "\"Undo record applied to video in the add record screen\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1587,
       "length": 48,
       "value": "\"com.banuba.alert.discardMusic.agreeButtonTitle\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1646,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1728,
       "length": 51,
       "value": "\"com.banuba.alert.discardMusic.disagreeButtonTitle\""
     },
     {
-      "filePath": "\/Users\/andrei.sak\/Developer\/Video Editor\/banuba_ve_sdk_ios\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Update_modules_iOS\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1790,
       "length": 2,
