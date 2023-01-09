@@ -104,12 +104,12 @@ extension BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory {
   public func makeEffectSelectionViewController() -> BanubaMusicEditorSDK.EffectSelectionViewController?
 }
 public protocol TrackSelectionViewControllerDelegate : AnyObject {
-  func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, id: Swift.Int32)
+  func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, uuid: Foundation.UUID)
   func trackSelectionViewControllerDidCancel(viewController: BanubaMusicEditorSDK.TrackSelectionViewController)
-  func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWithId trackId: Swift.Int32)
+  func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWith uuid: Foundation.UUID)
 }
 extension BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate {
-  public func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWithId trackId: Swift.Int32)
+  public func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWith uuid: Foundation.UUID)
 }
 public protocol TrackSelectionViewController : UIKit.UIViewController {
   var trackSelectionDelegate: BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate? { get set }
@@ -124,7 +124,7 @@ public protocol TrackSelectionViewController : UIKit.UIViewController {
   @objc deinit
 }
 public protocol EffectSelectionViewControllerDelegate : AnyObject {
-  func effectSelectionViewController(viewController: BanubaMusicEditorSDK.EffectSelectionViewController, didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, id: Swift.Int32)
+  func effectSelectionViewController(viewController: BanubaMusicEditorSDK.EffectSelectionViewController, didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, uuid: Foundation.UUID)
   func effectSelectionViewControllerDidCancel(viewController: BanubaMusicEditorSDK.EffectSelectionViewController)
 }
 public protocol EffectSelectionViewController : UIKit.UIViewController {
@@ -136,8 +136,9 @@ public protocol MusicEditorCountdownAnimatableView : UIKit.UIView {
   func stop()
 }
 public protocol VideoEditorServiceAdoptable : AnyObject {
+  var preferredTrackId: CoreMedia.CMPersistentTrackID { get }
   var isMultiAudioEnabled: Swift.Bool { get }
-  func addMusicTrack(didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, id: Swift.Int32, start: CoreMedia.CMTime, duration: CoreMedia.CMTime?, trimmedStart: Foundation.TimeInterval?) -> (asset: AVFoundation.AVURLAsset, timeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, compositionStart: CoreMedia.CMTime, avAssetTrack: AVFoundation.AVAssetTrack)?
+  func addMusicTrack(didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, uuid: Foundation.UUID, preferredTrackID: CoreMedia.CMPersistentTrackID?, start: CoreMedia.CMTime, duration: CoreMedia.CMTime?, trimmedStart: Foundation.TimeInterval?) -> (id: Swift.Int32, asset: AVFoundation.AVURLAsset, timeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, compositionStart: CoreMedia.CMTime, avAssetTrack: AVFoundation.AVAssetTrack)?
   func changeMusicTrackPosition(currentTime: Swift.Double, durationInSeconds: Swift.Double, compositionTimeRange: CoreMedia.CMTimeRange, composition: AVFoundation.AVMutableCompositionTrack, assetTrack: AVFoundation.AVAssetTrack, audioTrack: BanubaUtilities.AudioTrackAdoptable) -> CoreMedia.CMTimeRange?
   func musicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable) -> Swift.Float
   func setMusicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable, volume: Swift.Float, to player: BanubaUtilities.VideoEditorPlayable)
@@ -164,6 +165,7 @@ public struct MainMusicViewControllerConfig {
   public var videoControlsViewBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
   public var timelineCornerRadius: CoreFoundation.CGFloat
   public var alertConfig: BanubaUtilities.AlertViewConfiguration
+  public var toastConfiguration: BanubaUtilities.ToastConfiguration
 }
 public struct AudioRecorderViewControllerConfig {
   public var rewindToStartButton: BanubaMusicEditorSDK.ControlButtonConfig?
