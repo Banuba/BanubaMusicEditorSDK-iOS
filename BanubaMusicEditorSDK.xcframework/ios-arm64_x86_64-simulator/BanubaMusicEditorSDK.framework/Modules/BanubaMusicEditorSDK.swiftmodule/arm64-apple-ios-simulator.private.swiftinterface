@@ -51,7 +51,7 @@ public enum AVAudioEngineUnitParameter {
     get
   }
 }
-public enum VoiceEffects : Swift.Int {
+public enum VoiceEffectType : Swift.Int {
   case baritone
   case echo
   case elf
@@ -70,12 +70,12 @@ public struct VoiceFilter : Swift.Equatable {
   public var id: Swift.Int {
     get
   }
-  public let type: BanubaMusicEditorSDK.VoiceEffects
+  public let type: BanubaMusicEditorSDK.VoiceEffectType
   public var title: Swift.String?
   public var color: UIKit.UIColor
   public var image: UIKit.UIImage?
   public var settings: BanubaMusicEditorSDK.AVAudioEngineFilterSetting
-  public init(type: BanubaMusicEditorSDK.VoiceEffects, title: Swift.String?, color: UIKit.UIColor? = nil, image: UIKit.UIImage?, settings: BanubaMusicEditorSDK.AVAudioEngineFilterSetting? = nil)
+  public init(type: BanubaMusicEditorSDK.VoiceEffectType, title: Swift.String?, color: UIKit.UIColor? = nil, image: UIKit.UIImage?, settings: BanubaMusicEditorSDK.AVAudioEngineFilterSetting? = nil)
   public static func == (lhs: BanubaMusicEditorSDK.VoiceFilter, rhs: BanubaMusicEditorSDK.VoiceFilter) -> Swift.Bool
 }
 public protocol AudioWriterAdoptableDelegate : AnyObject {
@@ -241,6 +241,7 @@ public struct EditButtonConfig {
     case track
     case effect
     case record
+    case volume
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -323,9 +324,9 @@ extension BanubaMusicEditorSDK.AVAudioEngineUnit : Swift.Equatable {}
 extension BanubaMusicEditorSDK.AVAudioEngineUnit : Swift.Hashable {}
 extension BanubaMusicEditorSDK.AVAudioEngineUnitParameter : Swift.Equatable {}
 extension BanubaMusicEditorSDK.AVAudioEngineUnitParameter : Swift.Hashable {}
-extension BanubaMusicEditorSDK.VoiceEffects : Swift.Equatable {}
-extension BanubaMusicEditorSDK.VoiceEffects : Swift.Hashable {}
-extension BanubaMusicEditorSDK.VoiceEffects : Swift.RawRepresentable {}
+extension BanubaMusicEditorSDK.VoiceEffectType : Swift.Equatable {}
+extension BanubaMusicEditorSDK.VoiceEffectType : Swift.Hashable {}
+extension BanubaMusicEditorSDK.VoiceEffectType : Swift.RawRepresentable {}
 extension BanubaMusicEditorSDK.EditButtonConfig.`Type` : Swift.Equatable {}
 extension BanubaMusicEditorSDK.EditButtonConfig.`Type` : Swift.Hashable {}
 extension BanubaMusicEditorSDK.EditButtonConfig.`Type` : Swift.RawRepresentable {}

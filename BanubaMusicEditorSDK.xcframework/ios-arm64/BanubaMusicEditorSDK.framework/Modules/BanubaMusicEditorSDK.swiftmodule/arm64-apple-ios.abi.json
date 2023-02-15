@@ -1199,8 +1199,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "VoiceEffects",
-        "printedName": "VoiceEffects",
+        "name": "VoiceEffectType",
+        "printedName": "VoiceEffectType",
         "children": [
           {
             "kind": "Var",
@@ -1210,24 +1210,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BanubaMusicEditorSDK.VoiceEffects.Type) -> BanubaMusicEditorSDK.VoiceEffects",
+                "printedName": "(BanubaMusicEditorSDK.VoiceEffectType.Type) -> BanubaMusicEditorSDK.VoiceEffectType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects.Type",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "VoiceEffects",
-                        "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                        "name": "VoiceEffectType",
+                        "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                       }
                     ]
                   }
@@ -1235,8 +1235,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO8baritoneyA2CmF",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO8baritoneyA2CmF",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO8baritoneyA2CmF",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO8baritoneyA2CmF",
             "moduleName": "BanubaMusicEditorSDK"
           },
           {
@@ -1247,24 +1247,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BanubaMusicEditorSDK.VoiceEffects.Type) -> BanubaMusicEditorSDK.VoiceEffects",
+                "printedName": "(BanubaMusicEditorSDK.VoiceEffectType.Type) -> BanubaMusicEditorSDK.VoiceEffectType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects.Type",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "VoiceEffects",
-                        "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                        "name": "VoiceEffectType",
+                        "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                       }
                     ]
                   }
@@ -1272,8 +1272,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO4echoyA2CmF",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO4echoyA2CmF",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO4echoyA2CmF",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO4echoyA2CmF",
             "moduleName": "BanubaMusicEditorSDK"
           },
           {
@@ -1284,24 +1284,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BanubaMusicEditorSDK.VoiceEffects.Type) -> BanubaMusicEditorSDK.VoiceEffects",
+                "printedName": "(BanubaMusicEditorSDK.VoiceEffectType.Type) -> BanubaMusicEditorSDK.VoiceEffectType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects.Type",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "VoiceEffects",
-                        "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                        "name": "VoiceEffectType",
+                        "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                       }
                     ]
                   }
@@ -1309,8 +1309,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO3elfyA2CmF",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO3elfyA2CmF",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO3elfyA2CmF",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO3elfyA2CmF",
             "moduleName": "BanubaMusicEditorSDK"
           },
           {
@@ -1321,24 +1321,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BanubaMusicEditorSDK.VoiceEffects.Type) -> BanubaMusicEditorSDK.VoiceEffects",
+                "printedName": "(BanubaMusicEditorSDK.VoiceEffectType.Type) -> BanubaMusicEditorSDK.VoiceEffectType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects.Type",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "VoiceEffects",
-                        "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                        "name": "VoiceEffectType",
+                        "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                       }
                     ]
                   }
@@ -1346,8 +1346,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO5giantyA2CmF",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO5giantyA2CmF",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO5giantyA2CmF",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO5giantyA2CmF",
             "moduleName": "BanubaMusicEditorSDK"
           },
           {
@@ -1358,24 +1358,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BanubaMusicEditorSDK.VoiceEffects.Type) -> BanubaMusicEditorSDK.VoiceEffects",
+                "printedName": "(BanubaMusicEditorSDK.VoiceEffectType.Type) -> BanubaMusicEditorSDK.VoiceEffectType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects.Type",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "VoiceEffects",
-                        "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                        "name": "VoiceEffectType",
+                        "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                       }
                     ]
                   }
@@ -1383,8 +1383,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO5robotyA2CmF",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO5robotyA2CmF",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO5robotyA2CmF",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO5robotyA2CmF",
             "moduleName": "BanubaMusicEditorSDK"
           },
           {
@@ -1395,24 +1395,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(BanubaMusicEditorSDK.VoiceEffects.Type) -> BanubaMusicEditorSDK.VoiceEffects",
+                "printedName": "(BanubaMusicEditorSDK.VoiceEffectType.Type) -> BanubaMusicEditorSDK.VoiceEffectType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects.Type",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "VoiceEffects",
-                        "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                        "name": "VoiceEffectType",
+                        "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                       }
                     ]
                   }
@@ -1420,8 +1420,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO8squirrelyA2CmF",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO8squirrelyA2CmF",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO8squirrelyA2CmF",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO8squirrelyA2CmF",
             "moduleName": "BanubaMusicEditorSDK"
           },
           {
@@ -1432,13 +1432,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "BanubaMusicEditorSDK.VoiceEffects?",
+                "printedName": "BanubaMusicEditorSDK.VoiceEffectType?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1451,8 +1451,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO8rawValueACSgSi_tcfc",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO8rawValueACSgSi_tcfc",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO8rawValueACSgSi_tcfc",
             "moduleName": "BanubaMusicEditorSDK",
             "implicit": true,
             "init_kind": "Designated"
@@ -1470,8 +1470,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO8rawValueSivp",
-            "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO8rawValueSivp",
+            "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO8rawValueSivp",
+            "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO8rawValueSivp",
             "moduleName": "BanubaMusicEditorSDK",
             "implicit": true,
             "accessors": [
@@ -1488,8 +1488,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO8rawValueSivg",
-                "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO8rawValueSivg",
+                "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO8rawValueSivg",
+                "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO8rawValueSivg",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1498,8 +1498,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO",
-        "mangledName": "$s20BanubaMusicEditorSDK12VoiceEffectsO",
+        "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO",
+        "mangledName": "$s20BanubaMusicEditorSDK15VoiceEffectTypeO",
         "moduleName": "BanubaMusicEditorSDK",
         "declAttributes": [
           "AccessControl"
@@ -1596,14 +1596,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "VoiceEffects",
-                "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                "name": "VoiceEffectType",
+                "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E7EffectsOvp",
-            "mangledName": "$s20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E7EffectsOvp",
+            "usr": "s:20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E10EffectTypeOvp",
+            "mangledName": "$s20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E10EffectTypeOvp",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "HasStorage",
@@ -1619,14 +1619,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "VoiceEffects",
-                    "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                    "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                    "name": "VoiceEffectType",
+                    "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                    "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E7EffectsOvg",
-                "mangledName": "$s20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E7EffectsOvg",
+                "usr": "s:20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E10EffectTypeOvg",
+                "mangledName": "$s20BanubaMusicEditorSDK11VoiceFilterV4typeAA0E10EffectTypeOvg",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2122,9 +2122,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VoiceEffects",
-                "printedName": "BanubaMusicEditorSDK.VoiceEffects",
-                "usr": "s:20BanubaMusicEditorSDK12VoiceEffectsO"
+                "name": "VoiceEffectType",
+                "printedName": "BanubaMusicEditorSDK.VoiceEffectType",
+                "usr": "s:20BanubaMusicEditorSDK15VoiceEffectTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -2214,8 +2214,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20BanubaMusicEditorSDK11VoiceFilterV4type5title5color5image8settingsAcA0E7EffectsO_SSSgSo7UIColorCSgSo7UIImageCSgSDyAA17AVAudioEngineUnitOSDyAA0opQ9ParameterOSfGGSgtcfc",
-            "mangledName": "$s20BanubaMusicEditorSDK11VoiceFilterV4type5title5color5image8settingsAcA0E7EffectsO_SSSgSo7UIColorCSgSo7UIImageCSgSDyAA17AVAudioEngineUnitOSDyAA0opQ9ParameterOSfGGSgtcfc",
+            "usr": "s:20BanubaMusicEditorSDK11VoiceFilterV4type5title5color5image8settingsAcA0E10EffectTypeO_SSSgSo7UIColorCSgSo7UIImageCSgSDyAA17AVAudioEngineUnitOSDyAA0pqR9ParameterOSfGGSgtcfc",
+            "mangledName": "$s20BanubaMusicEditorSDK11VoiceFilterV4type5title5color5image8settingsAcA0E10EffectTypeO_SSSgSo7UIColorCSgSo7UIImageCSgSDyAA17AVAudioEngineUnitOSDyAA0pqR9ParameterOSfGGSgtcfc",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "AccessControl"
@@ -11895,6 +11895,43 @@
                 "moduleName": "BanubaMusicEditorSDK"
               },
               {
+                "kind": "Var",
+                "name": "volume",
+                "printedName": "volume",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BanubaMusicEditorSDK.EditButtonConfig.`Type`.Type) -> BanubaMusicEditorSDK.EditButtonConfig.`Type`",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Type",
+                        "printedName": "BanubaMusicEditorSDK.EditButtonConfig.`Type`",
+                        "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BanubaMusicEditorSDK.EditButtonConfig.`Type`.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Type",
+                            "printedName": "BanubaMusicEditorSDK.EditButtonConfig.`Type`",
+                            "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV4TypeO6volumeyA2EmF",
+                "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV4TypeO6volumeyA2EmF",
+                "moduleName": "BanubaMusicEditorSDK"
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(rawValue:)",
@@ -16306,133 +16343,133 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 497,
+      "offset": 500,
       "length": 3,
       "value": "301"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 518,
       "length": 3,
       "value": "302"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 532,
+      "offset": 535,
       "length": 3,
       "value": "303"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 551,
+      "offset": 554,
       "length": 3,
       "value": "304"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 573,
       "length": 3,
       "value": "305"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 592,
+      "offset": 595,
       "length": 3,
       "value": "306"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 497,
+      "offset": 500,
       "length": 3,
       "value": "301"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 518,
       "length": 3,
       "value": "302"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 532,
+      "offset": 535,
       "length": 3,
       "value": "303"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 551,
+      "offset": 554,
       "length": 3,
       "value": "304"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 573,
       "length": 3,
       "value": "305"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 592,
+      "offset": 595,
       "length": 3,
       "value": "306"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 497,
+      "offset": 500,
       "length": 3,
       "value": "301"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 518,
       "length": 3,
       "value": "302"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 532,
+      "offset": 535,
       "length": 3,
       "value": "303"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 551,
+      "offset": 554,
       "length": 3,
       "value": "304"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 573,
       "length": 3,
       "value": "305"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "IntegerLiteral",
-      "offset": 592,
+      "offset": 595,
       "length": 3,
       "value": "306"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Services\/VoiceFilterProvider.swift",
       "kind": "Dictionary",
-      "offset": 1031,
+      "offset": 1037,
       "length": 3,
       "value": "[]"
     },
@@ -16481,7 +16518,7 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 9512,
+      "offset": 9653,
       "length": 5,
       "value": "false"
     },

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		zDXjL0WNMMQDt9EqZ5n34cVju0I=
+		9vQdzQRyiWJROp9QE532okzx6UI=
 		</data>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yBx8JukMGYpSkU5DqUPV+K4JlV0=
+		Vv5flXBXtjpsKVdex3ehYRM5KHQ=
 		</data>
 		<key>MainMusicViewController.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Fj22Jm88vK3mxyIxonzHarbfQNw=
+		XDrX/Tc70ht32zYvHkRe00h1Deo=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		58o6QqSzWF/CQp7MOeMGNjvYkg0=
+		y8azNsb2+tEpCuYKGui7XNTRbc0=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -70,19 +70,19 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		58o6QqSzWF/CQp7MOeMGNjvYkg0=
+		y8azNsb2+tEpCuYKGui7XNTRbc0=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YFrh3ruVnFZiArjrxd1AT1EiryM=
+		DBcpYdYGZIz/qsmmnttUfc1owCs=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Fj22Jm88vK3mxyIxonzHarbfQNw=
+		XDrX/Tc70ht32zYvHkRe00h1Deo=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		j2xGgdjJXJMv8J45vpqKOs0DgVo=
+		pZkXG4fwiw1HLuXLHWrtKec0eG0=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		j2xGgdjJXJMv8J45vpqKOs0DgVo=
+		pZkXG4fwiw1HLuXLHWrtKec0eG0=
 		</data>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lv1d7mmfpkt7olAJgRkSRyueeyQ=
+		hBZ6tXCRTG2tgxsHXDI8fPjIxCc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,7 +119,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XC/34s2cBhPkNtaJNFXDTFy1BX1rZeZkuRMSQCHFogI=
+			mMQKQrky66l3BvajGRkJbwNhjC8WXaCpzltsc55LqQU=
 			</data>
 		</dict>
 		<key>AudioRecorderViewController.storyboardc/AudioRecorderViewController.nib</key>
@@ -203,14 +203,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YTIIEZnBubSeLOSf9gBq7+QNXiwZ3gANoJkx6+vXMw0=
+			5f7xvcL4TLN4XbBT8AdGfBRcon9XR4d9Lsq3pC/bueQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VAa+tQrhGy2UR00VyngcKzQOFpufql3GYBN/xCRbdNs=
+			S73+l6pe9xrnevpXmqMD8aJ0//uIUi2bKNSqPVYEzac=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -224,28 +224,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VAa+tQrhGy2UR00VyngcKzQOFpufql3GYBN/xCRbdNs=
+			S73+l6pe9xrnevpXmqMD8aJ0//uIUi2bKNSqPVYEzac=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aGj8wzvgFMlRO+gj1TIkeLXqhbFCUn3OsEfF/LojfVc=
+			x4hJIS9ogIoMkg1eXaSjKpmt4dqqB/TC1Du81GjcEJQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YTIIEZnBubSeLOSf9gBq7+QNXiwZ3gANoJkx6+vXMw0=
+			5f7xvcL4TLN4XbBT8AdGfBRcon9XR4d9Lsq3pC/bueQ=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/xEfl0SDR2yygdV47ooChDH+heuhR6SLMW1sdMQA2xI=
+			PTIJZmYDtfcuBYA6Dhillkcv3R990UXhx11Su2i590k=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -259,14 +259,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/xEfl0SDR2yygdV47ooChDH+heuhR6SLMW1sdMQA2xI=
+			PTIJZmYDtfcuBYA6Dhillkcv3R990UXhx11Su2i590k=
 			</data>
 		</dict>
 		<key>Modules/BanubaMusicEditorSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmivM2WFDx+DQ1IYMhoGrTzJD1YKn+72K8xth7hlLo8=
+			M76A52Dya1pY84Mh0nUvlNJLmuZ933y+tXLP9NobEAY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
