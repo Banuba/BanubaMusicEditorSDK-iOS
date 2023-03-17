@@ -448,7 +448,7 @@
           {
             "kind": "Function",
             "name": "presentMusicEditor",
-            "printedName": "presentMusicEditor(from:animated:completion:)",
+            "printedName": "presentMusicEditor(from:animated:isPiPSession:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -460,6 +460,12 @@
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
                 "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -494,8 +500,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK0abC0C07presentbC04from8animated10completionySo16UIViewControllerC_SbyycSgtF",
-            "mangledName": "$s20BanubaMusicEditorSDK0abC0C07presentbC04from8animated10completionySo16UIViewControllerC_SbyycSgtF",
+            "usr": "s:20BanubaMusicEditorSDK0abC0C07presentbC04from8animated12isPiPSession10completionySo16UIViewControllerC_S2byycSgtF",
+            "mangledName": "$s20BanubaMusicEditorSDK0abC0C07presentbC04from8animated12isPiPSession10completionySo16UIViewControllerC_S2byycSgtF",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "AccessControl",
@@ -3242,8 +3248,8 @@
           },
           {
             "kind": "Function",
-            "name": "trackSelectionViewController",
-            "printedName": "trackSelectionViewController(viewController:didStopUsingTrackWith:)",
+            "name": "trackSelectionViewControllerDiscardCurrentTrack",
+            "printedName": "trackSelectionViewControllerDiscardCurrentTrack(viewController:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3255,17 +3261,11 @@
                 "name": "TrackSelectionViewController",
                 "printedName": "BanubaMusicEditorSDK.TrackSelectionViewController",
                 "usr": "s:20BanubaMusicEditorSDK28TrackSelectionViewControllerP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgH004viewH0012didStopUsingE4WithyAA0efgH0_p_10Foundation4UUIDVtF",
-            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgH004viewH0012didStopUsingE4WithyAA0efgH0_p_10Foundation4UUIDVtF",
+            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgh14DiscardCurrentE004viewH0yAA0efgH0_p_tF",
+            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgh14DiscardCurrentE004viewH0yAA0efgH0_p_tF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
@@ -3275,8 +3275,8 @@
           },
           {
             "kind": "Function",
-            "name": "trackSelectionViewController",
-            "printedName": "trackSelectionViewController(viewController:didStopUsingTrackWith:)",
+            "name": "trackSelectionViewControllerDiscardCurrentTrack",
+            "printedName": "trackSelectionViewControllerDiscardCurrentTrack(viewController:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3288,17 +3288,11 @@
                 "name": "TrackSelectionViewController",
                 "printedName": "BanubaMusicEditorSDK.TrackSelectionViewController",
                 "usr": "s:20BanubaMusicEditorSDK28TrackSelectionViewControllerP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegatePAAE05trackfgH004viewH0012didStopUsingE4WithyAA0efgH0_p_10Foundation4UUIDVtF",
-            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegatePAAE05trackfgH004viewH0012didStopUsingE4WithyAA0efgH0_p_10Foundation4UUIDVtF",
+            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegatePAAE05trackfgh14DiscardCurrentE004viewH0yAA0efgH0_p_tF",
+            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegatePAAE05trackfgh14DiscardCurrentE004viewH0yAA0efgH0_p_tF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
@@ -4690,6 +4684,28 @@
           },
           {
             "kind": "Function",
+            "name": "hasVideoTrack",
+            "printedName": "hasVideoTrack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03hasE5TrackSbyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03hasE5TrackSbyF",
+            "moduleName": "BanubaMusicEditorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "videoTrackVolume",
             "printedName": "videoTrackVolume()",
             "children": [
@@ -4736,6 +4752,83 @@
             "declKind": "Func",
             "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setE11TrackVolume_2toySf_0A9Utilities0eC8Playable_ptF",
             "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setE11TrackVolume_2toySf_0A9Utilities0eC8Playable_ptF",
+            "moduleName": "BanubaMusicEditorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hasPiPAudioTrack",
+            "printedName": "hasPiPAudioTrack()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16hasPiPAudioTrackSbyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16hasPiPAudioTrackSbyF",
+            "moduleName": "BanubaMusicEditorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pipAudioTrackVolume",
+            "printedName": "pipAudioTrackVolume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP19pipAudioTrackVolumeSfyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP19pipAudioTrackVolumeSfyF",
+            "moduleName": "BanubaMusicEditorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPiPAudioVolume",
+            "printedName": "setPiPAudioVolume(_:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VideoEditorPlayable",
+                "printedName": "BanubaUtilities.VideoEditorPlayable",
+                "usr": "s:15BanubaUtilities19VideoEditorPlayableP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP17setPiPAudioVolume_2toySf_0A9Utilities0eC8Playable_ptF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP17setPiPAudioVolume_2toySf_0A9Utilities0eC8Playable_ptF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -5547,178 +5640,6 @@
                 "declKind": "Accessor",
                 "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV21additionalLabelColorsSo7UIColorCvM",
                 "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV21additionalLabelColorsSo7UIColorCvM",
-                "moduleName": "BanubaMusicEditorSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "speakerImageName",
-            "printedName": "speakerImageName",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvp",
-            "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvp",
-            "moduleName": "BanubaMusicEditorSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvg",
-                "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvg",
-                "moduleName": "BanubaMusicEditorSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvs",
-                "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvs",
-                "moduleName": "BanubaMusicEditorSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvM",
-                "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV16speakerImageNameSSvM",
-                "moduleName": "BanubaMusicEditorSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "volumeLabel",
-            "printedName": "volumeLabel",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TextButtonConfig",
-                "printedName": "BanubaMusicEditorSDK.MusicEditor.TextButtonConfig",
-                "usr": "s:20BanubaMusicEditorSDK0bC0V16TextButtonConfigV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0Vvp",
-            "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0Vvp",
-            "moduleName": "BanubaMusicEditorSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TextButtonConfig",
-                    "printedName": "BanubaMusicEditorSDK.MusicEditor.TextButtonConfig",
-                    "usr": "s:20BanubaMusicEditorSDK0bC0V16TextButtonConfigV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0Vvg",
-                "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0Vvg",
-                "moduleName": "BanubaMusicEditorSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TextButtonConfig",
-                    "printedName": "BanubaMusicEditorSDK.MusicEditor.TextButtonConfig",
-                    "usr": "s:20BanubaMusicEditorSDK0bC0V16TextButtonConfigV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0Vvs",
-                "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0Vvs",
-                "moduleName": "BanubaMusicEditorSDK",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0VvM",
-                "mangledName": "$s20BanubaMusicEditorSDK04MainB20ViewControllerConfigV11volumeLabelAA0bC0V010TextButtonH0VvM",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -8362,19 +8283,19 @@
           },
           {
             "kind": "Var",
-            "name": "height",
-            "printedName": "height",
+            "name": "dragIndicatorColor",
+            "printedName": "dragIndicatorColor",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "usr": "s:14CoreFoundation7CGFloatV"
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height14CoreFoundation7CGFloatVvp",
-            "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height12CoreGraphics7CGFloatVvp",
+            "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvp",
+            "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvp",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "HasStorage",
@@ -8390,14 +8311,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height14CoreFoundation7CGFloatVvg",
-                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height12CoreGraphics7CGFloatVvg",
+                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvg",
+                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvg",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8414,14 +8335,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height14CoreFoundation7CGFloatVvs",
-                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height12CoreGraphics7CGFloatVvs",
+                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvs",
+                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvs",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -8438,8 +8359,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height14CoreFoundation7CGFloatVvM",
-                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV6height12CoreGraphics7CGFloatVvM",
+                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvM",
+                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV18dragIndicatorColorSo7UIColorCvM",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -16497,28 +16418,35 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "FloatLiteral",
-      "offset": 3073,
+      "offset": 3028,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3486,
+      "offset": 3169,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3537,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 2519,
+      "offset": 2474,
       "length": 32,
       "value": "\"BanubaMusicEditorSDK.MainMusicViewControllerPresenter\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/MainMusicViewControllerPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 9653,
+      "offset": 10007,
       "length": 5,
       "value": "false"
     },
@@ -16579,16 +16507,37 @@
       "value": "\"BanubaMusicEditorSDK.AudioRecorderViewControllerInteractor\""
     },
     {
-      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/Main\/MainMusicViewController.swift",
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
       "kind": "FloatLiteral",
-      "offset": 228,
+      "offset": 266,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
+      "kind": "FloatLiteral",
+      "offset": 313,
       "length": 3,
-      "value": "3.0"
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
+      "kind": "FloatLiteral",
+      "offset": 360,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1082,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Presenters\/VideoTrackLineEditViewControllerPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 538,
+      "offset": 854,
       "length": 41,
       "value": "\"BanubaMusicEditorSDK.VideoTrackLineEditViewControllerPresenter\""
     },
@@ -16960,97 +16909,125 @@
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
       "offset": 1028,
+      "length": 27,
+      "value": "\"MusicEditor.OriginalSound\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 20,
+      "value": "\"Video volume title\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1137,
+      "length": 24,
+      "value": "\"MusicEditor.AddedSound\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1172,
+      "length": 20,
+      "value": "\"Video volume title\""
+    },
+    {
+      "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 1246,
       "length": 22,
       "value": "\"MusicEditor.Duration\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1061,
+      "offset": 1279,
       "length": 22,
       "value": "\"Audio duration title\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 1356,
       "length": 50,
       "value": "\"com.banuba.musicEditor.mainScreen.resetAll.title\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1199,
+      "offset": 1417,
       "length": 45,
       "value": "\"Confirmation message for discarding changes\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1301,
+      "offset": 1519,
       "length": 52,
       "value": "\"com.banuba.musicEditor.mainScreen.resetAll.message\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1364,
+      "offset": 1582,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1429,
+      "offset": 1647,
       "length": 6,
       "value": "\"Undo\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1446,
+      "offset": 1664,
       "length": 55,
       "value": "\"Undo record applied to video in the add record screen\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1578,
+      "offset": 1796,
       "length": 48,
       "value": "\"com.banuba.alert.discardMusic.agreeButtonTitle\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1855,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1719,
+      "offset": 1937,
       "length": 51,
       "value": "\"com.banuba.alert.discardMusic.disagreeButtonTitle\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 1781,
+      "offset": 1999,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 2090,
+      "offset": 2308,
       "length": 31,
       "value": "\"feature.disabled.audiobrowser\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/Entities\/Common\/LocalizedStrings.swift",
       "kind": "StringLiteral",
-      "offset": 2132,
+      "offset": 2350,
       "length": 2,
       "value": "\"\""
     }

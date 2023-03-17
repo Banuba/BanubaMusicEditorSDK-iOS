@@ -22,7 +22,7 @@ public class BanubaMusicEditor {
   weak public var delegate: BanubaMusicEditorSDK.BanubaMusicEditorDelegate?
   public init(audioEditorService: BanubaUtilities.AudioEditorServiceAdoptable, videoEditorService: BanubaMusicEditorSDK.VideoEditorServiceAdoptable, timeLineDataSource: BanubaUtilities.TimeLineDataSource, audioWriter: BanubaMusicEditorSDK.AudioWriterAdoptable, playablePreview: VEPlaybackSDK.PlayableViewController, musicEditorConfig: BanubaMusicEditorSDK.MusicEditorConfig, externalFactory: BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory?, audioTracks: [BanubaUtilities.AudioTrackAdoptable]?)
   public func updatePreviewPlayer(player: BanubaUtilities.VideoEditorPlayable)
-  public func presentMusicEditor(from hostController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  public func presentMusicEditor(from hostController: UIKit.UIViewController, animated: Swift.Bool, isPiPSession: Swift.Bool, completion: (() -> Swift.Void)?)
   public func dismissMusicEditor(animated: Swift.Bool, completion: (() -> Swift.Void)?)
   @objc deinit
 }
@@ -106,10 +106,10 @@ extension BanubaMusicEditorSDK.MusicEditorExternalViewControllerFactory {
 public protocol TrackSelectionViewControllerDelegate : AnyObject {
   func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didSelectFile url: Foundation.URL, isEditable: Swift.Bool, title: Swift.String, additionalTitle: Swift.String?, uuid: Foundation.UUID)
   func trackSelectionViewControllerDidCancel(viewController: BanubaMusicEditorSDK.TrackSelectionViewController)
-  func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWith uuid: Foundation.UUID)
+  func trackSelectionViewControllerDiscardCurrentTrack(viewController: BanubaMusicEditorSDK.TrackSelectionViewController)
 }
 extension BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate {
-  public func trackSelectionViewController(viewController: BanubaMusicEditorSDK.TrackSelectionViewController, didStopUsingTrackWith uuid: Foundation.UUID)
+  public func trackSelectionViewControllerDiscardCurrentTrack(viewController: BanubaMusicEditorSDK.TrackSelectionViewController)
 }
 public protocol TrackSelectionViewController : UIKit.UIViewController {
   var trackSelectionDelegate: BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate? { get set }
@@ -143,8 +143,12 @@ public protocol VideoEditorServiceAdoptable : AnyObject {
   func musicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable) -> Swift.Float
   func setMusicTrackVolume(_ track: BanubaUtilities.AudioTrackAdoptable, volume: Swift.Float, to player: BanubaUtilities.VideoEditorPlayable)
   func removeMusicTrack(_ track: BanubaUtilities.AudioTrackAdoptable) -> Swift.Bool
+  func hasVideoTrack() -> Swift.Bool
   func videoTrackVolume() -> Swift.Float
   func setVideoTrackVolume(_ volume: Swift.Float, to player: BanubaUtilities.VideoEditorPlayable)
+  func hasPiPAudioTrack() -> Swift.Bool
+  func pipAudioTrackVolume() -> Swift.Float
+  func setPiPAudioVolume(_ volume: Swift.Float, to player: BanubaUtilities.VideoEditorPlayable)
 }
 public struct MainMusicViewControllerConfig {
   public var editButtons: [BanubaMusicEditorSDK.EditButtonConfig]
@@ -155,8 +159,6 @@ public struct MainMusicViewControllerConfig {
   public var audioWaveConfiguration: BanubaMusicEditorSDK.AudioWaveConfiguration
   public var mainLabelColors: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
-  public var speakerImageName: Swift.String
-  public var volumeLabel: BanubaMusicEditorSDK.TextButtonConfig
   public var tracksLimit: Swift.Int
   public var cursorColor: UIKit.UIColor
   public var controlsBackgroundConfiguration: BanubaUtilities.BackgroundConfiguration
@@ -191,7 +193,7 @@ public struct VideoTrackLineEditViewControllerConfig {
   public var mainLabelColors: UIKit.UIColor
   public var additionalLabelColors: UIKit.UIColor
   public var backgroundConfiguration: BanubaUtilities.BackgroundConfiguration
-  public var height: CoreFoundation.CGFloat
+  public var dragIndicatorColor: UIKit.UIColor
 }
 public struct AudioWaveConfiguration {
   public var isRandomWaveColor: Swift.Bool
