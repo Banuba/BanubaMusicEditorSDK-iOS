@@ -2832,17 +2832,23 @@
           {
             "kind": "Function",
             "name": "stopCapturing",
-            "printedName": "stopCapturing()",
+            "printedName": "stopCapturing(isAsync:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK20AudioWriterAdoptableP13stopCapturingyyF",
-            "mangledName": "$s20BanubaMusicEditorSDK20AudioWriterAdoptableP13stopCapturingyyF",
+            "usr": "s:20BanubaMusicEditorSDK20AudioWriterAdoptableP13stopCapturing7isAsyncySb_tF",
+            "mangledName": "$s20BanubaMusicEditorSDK20AudioWriterAdoptableP13stopCapturing7isAsyncySb_tF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.AudioWriterAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.AudioWriterAdoptable>",
@@ -2934,8 +2940,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "BanubaMusicEditorSDK",
         "declAttributes": [
@@ -2944,8 +2950,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "BanubaMusicEditorSDK"
       },
@@ -3157,7 +3163,7 @@
           {
             "kind": "Function",
             "name": "trackSelectionViewController",
-            "printedName": "trackSelectionViewController(viewController:didSelectFile:isEditable:title:additionalTitle:uuid:)",
+            "printedName": "trackSelectionViewController(viewController:didSelectFile:timeRange:isEditable:title:additionalTitle:uuid:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3175,6 +3181,20 @@
                 "name": "URL",
                 "printedName": "Foundation.URL",
                 "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMTimeRange?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTimeRange",
+                    "printedName": "CoreMedia.CMTimeRange",
+                    "usr": "c:@SA@CMTimeRange"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -3210,8 +3230,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgH004viewH013didSelectFile10isEditable5title15additionalTitle4uuidyAA0efgH0_p_10Foundation3URLVSbS2SSgAL4UUIDVtF",
-            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgH004viewH013didSelectFile10isEditable5title15additionalTitle4uuidyAA0efgH0_p_10Foundation3URLVSbS2SSgAL4UUIDVtF",
+            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgH004viewH013didSelectFile9timeRange10isEditable5title15additionalTitle4uuidyAA0efgH0_p_10Foundation3URLVSo06CMTimeP0aSgSbS2SSgAM4UUIDVtF",
+            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegateP05trackfgH004viewH013didSelectFile9timeRange10isEditable5title15additionalTitle4uuidyAA0efgH0_p_10Foundation3URLVSo06CMTimeP0aSgSbS2SSgAM4UUIDVtF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
@@ -3271,6 +3291,85 @@
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackSelectionViewController",
+            "printedName": "trackSelectionViewController(viewController:didSelectFile:timeRange:isEditable:title:additionalTitle:uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TrackSelectionViewController",
+                "printedName": "BanubaMusicEditorSDK.TrackSelectionViewController",
+                "usr": "s:20BanubaMusicEditorSDK28TrackSelectionViewControllerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreMedia.CMTimeRange?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CMTimeRange",
+                    "printedName": "CoreMedia.CMTimeRange",
+                    "usr": "c:@SA@CMTimeRange"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegatePAAE05trackfgH004viewH013didSelectFile9timeRange10isEditable5title15additionalTitle4uuidyAA0efgH0_p_10Foundation3URLVSo06CMTimeP0aSgSbS2SSgAM4UUIDVtF",
+            "mangledName": "$s20BanubaMusicEditorSDK36TrackSelectionViewControllerDelegatePAAE05trackfgH004viewH013didSelectFile9timeRange10isEditable5title15additionalTitle4uuidyAA0efgH0_p_10Foundation3URLVSo06CMTimeP0aSgSbS2SSgAM4UUIDVtF",
+            "moduleName": "BanubaMusicEditorSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.TrackSelectionViewControllerDelegate>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -4589,8 +4688,8 @@
           },
           {
             "kind": "Function",
-            "name": "musicTrackVolume",
-            "printedName": "musicTrackVolume(_:)",
+            "name": "getVolume",
+            "printedName": "getVolume(of:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4600,14 +4699,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AudioTrackAdoptable",
-                "printedName": "BanubaUtilities.AudioTrackAdoptable",
-                "usr": "s:15BanubaUtilities19AudioTrackAdoptableP"
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16musicTrackVolumeySf0A9Utilities05AudioiG0_pF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16musicTrackVolumeySf0A9Utilities05AudioiG0_pF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP9getVolume2ofSfs5Int32V_tF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP9getVolume2ofSfs5Int32V_tF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4617,8 +4716,8 @@
           },
           {
             "kind": "Function",
-            "name": "setMusicTrackVolume",
-            "printedName": "setMusicTrackVolume(_:volume:to:)",
+            "name": "setVolumeForTrackWithId",
+            "printedName": "setVolumeForTrackWithId(_:volume:to:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4627,9 +4726,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AudioTrackAdoptable",
-                "printedName": "BanubaUtilities.AudioTrackAdoptable",
-                "usr": "s:15BanubaUtilities19AudioTrackAdoptableP"
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
               },
               {
                 "kind": "TypeNominal",
@@ -4645,8 +4744,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setB11TrackVolume_6volume2toy0A9Utilities05AudioiG0_p_SfAG0eC8Playable_ptF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setB11TrackVolume_6volume2toy0A9Utilities05AudioiG0_p_SfAG0eC8Playable_ptF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP23setVolumeForTrackWithId_6volume2toys5Int32V_Sf0A9Utilities0eC8Playable_ptF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP23setVolumeForTrackWithId_6volume2toys5Int32V_Sf0A9Utilities0eC8Playable_ptF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4656,8 +4755,8 @@
           },
           {
             "kind": "Function",
-            "name": "removeMusicTrack",
-            "printedName": "removeMusicTrack(_:)",
+            "name": "removeTrack",
+            "printedName": "removeTrack(withId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4667,14 +4766,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AudioTrackAdoptable",
-                "printedName": "BanubaUtilities.AudioTrackAdoptable",
-                "usr": "s:15BanubaUtilities19AudioTrackAdoptableP"
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP06removeB5TrackySb0A9Utilities05AudioiG0_pF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP06removeB5TrackySb0A9Utilities05AudioiG0_pF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP11removeTrack6withIdSbs5Int32V_tF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP11removeTrack6withIdSbs5Int32V_tF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4684,8 +4783,8 @@
           },
           {
             "kind": "Function",
-            "name": "hasVideoTrack",
-            "printedName": "hasVideoTrack()",
+            "name": "hasVideoAudio",
+            "printedName": "hasVideoAudio()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4695,8 +4794,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03hasE5TrackSbyF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03hasE5TrackSbyF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03hasE5AudioSbyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03hasE5AudioSbyF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4706,8 +4805,8 @@
           },
           {
             "kind": "Function",
-            "name": "videoTrackVolume",
-            "printedName": "videoTrackVolume()",
+            "name": "videoVolume",
+            "printedName": "videoVolume()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4717,8 +4816,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16videoTrackVolumeSfyF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16videoTrackVolumeSfyF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP11videoVolumeSfyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP11videoVolumeSfyF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4728,8 +4827,8 @@
           },
           {
             "kind": "Function",
-            "name": "setVideoTrackVolume",
-            "printedName": "setVideoTrackVolume(_:to:)",
+            "name": "setVideoVolume",
+            "printedName": "setVideoVolume(_:to:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4750,8 +4849,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setE11TrackVolume_2toySf_0A9Utilities0eC8Playable_ptF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setE11TrackVolume_2toySf_0A9Utilities0eC8Playable_ptF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setE6Volume_2toySf_0A9Utilities0eC8Playable_ptF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP03setE6Volume_2toySf_0A9Utilities0eC8Playable_ptF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4761,8 +4860,8 @@
           },
           {
             "kind": "Function",
-            "name": "hasPiPAudioTrack",
-            "printedName": "hasPiPAudioTrack()",
+            "name": "hasPiPAudio",
+            "printedName": "hasPiPAudio()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4772,8 +4871,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16hasPiPAudioTrackSbyF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP16hasPiPAudioTrackSbyF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP11hasPiPAudioSbyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP11hasPiPAudioSbyF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -4783,8 +4882,8 @@
           },
           {
             "kind": "Function",
-            "name": "pipAudioTrackVolume",
-            "printedName": "pipAudioTrackVolume()",
+            "name": "getPiPAudioVolume",
+            "printedName": "getPiPAudioVolume()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4794,8 +4893,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP19pipAudioTrackVolumeSfyF",
-            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP19pipAudioTrackVolumeSfyF",
+            "usr": "s:20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP17getPiPAudioVolumeSfyF",
+            "mangledName": "$s20BanubaMusicEditorSDK05VideoC16ServiceAdoptableP17getPiPAudioVolumeSfyF",
             "moduleName": "BanubaMusicEditorSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
             "sugared_genericSig": "<Self where Self : BanubaMusicEditorSDK.VideoEditorServiceAdoptable>",
@@ -7749,6 +7848,117 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "controlButtonsTintColor",
+            "printedName": "controlButtonsTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvp",
+            "moduleName": "BanubaMusicEditorSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvg",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvs",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK33AudioRecorderViewControllerConfigV23controlButtonsTintColorSo7UIColorCSgvM",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -7858,16 +8068,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvp",
-            "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvp",
+            "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvp",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -7881,14 +8100,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvg",
-                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvg",
+                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvg",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7905,14 +8132,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvs",
-                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvs",
+                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvs",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7929,8 +8164,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvM",
-                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvM",
+                "usr": "s:20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK38VideoTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvM",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -9597,16 +9832,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "UIColor",
-                "printedName": "UIKit.UIColor",
-                "usr": "c:objc(cs)UIColor"
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvp",
-            "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvp",
+            "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvp",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -9620,14 +9864,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvg",
-                "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvg",
+                "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvg",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -9644,14 +9896,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UIColor",
-                    "printedName": "UIKit.UIColor",
-                    "usr": "c:objc(cs)UIColor"
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvs",
-                "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvs",
+                "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvs",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -9668,8 +9928,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvM",
-                "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCvM",
+                "usr": "s:20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK38AudioTrackLineEditViewControllerConfigV19doneButtonTintColorSo7UIColorCSgvM",
                 "moduleName": "BanubaMusicEditorSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -12404,9 +12664,120 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "tintColor",
+            "printedName": "tintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvp",
+            "moduleName": "BanubaMusicEditorSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvg",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvs",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV9tintColorSo7UIColorCSgvM",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(font:type:title:titleColor:imageName:)",
+            "printedName": "init(font:type:title:titleColor:imageName:tintColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12443,11 +12814,26 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV4font4type5title0J5Color9imageNameACSo6UIFontC_AC4TypeOSSSo7UIColorCSStcfc",
-            "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV4font4type5title0J5Color9imageNameACSo6UIFontC_AC4TypeOSSSo7UIColorCSStcfc",
+            "usr": "s:20BanubaMusicEditorSDK16EditButtonConfigV4font4type5title0J5Color9imageName04tintK0ACSo6UIFontC_AC4TypeOSSSo7UIColorCSSAOSgtcfc",
+            "mangledName": "$s20BanubaMusicEditorSDK16EditButtonConfigV4font4type5title0J5Color9imageName04tintK0ACSo6UIFontC_AC4TypeOSSSo7UIColorCSSAOSgtcfc",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "AccessControl",
@@ -13249,9 +13635,120 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "tintColor",
+            "printedName": "tintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvp",
+            "moduleName": "BanubaMusicEditorSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvg",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvs",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK27EditCompositionButtonConfigV9tintColorSo7UIColorCSgvM",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(font:type:title:titleColor:imageName:selectedImageName:)",
+            "printedName": "init(font:type:title:titleColor:imageName:selectedImageName:tintColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13302,11 +13799,26 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20BanubaMusicEditorSDK27EditCompositionButtonConfigV4font4type5title0K5Color9imageName013selectedImageN0ACSo6UIFontC_AC4TypeOSSSo7UIColorCS2SSgtcfc",
-            "mangledName": "$s20BanubaMusicEditorSDK27EditCompositionButtonConfigV4font4type5title0K5Color9imageName013selectedImageN0ACSo6UIFontC_AC4TypeOSSSo7UIColorCS2SSgtcfc",
+            "usr": "s:20BanubaMusicEditorSDK27EditCompositionButtonConfigV4font4type5title0K5Color9imageName013selectedImageN004tintL0ACSo6UIFontC_AC4TypeOSSSo7UIColorCS2SSgAPSgtcfc",
+            "mangledName": "$s20BanubaMusicEditorSDK27EditCompositionButtonConfigV4font4type5title0K5Color9imageName013selectedImageN004tintL0ACSo6UIFontC_AC4TypeOSSSo7UIColorCS2SSgAPSgtcfc",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "AccessControl",
@@ -13654,6 +14166,228 @@
           },
           {
             "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvp",
+            "moduleName": "BanubaMusicEditorSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvg",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvs",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV5imageSo7UIImageCSgvM",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "selectedImage",
+            "printedName": "selectedImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvp",
+            "moduleName": "BanubaMusicEditorSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvg",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvs",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV13selectedImageSo7UIImageCSgvM",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "imageName",
             "printedName": "imageName",
             "children": [
@@ -13961,9 +14695,120 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "tintColor",
+            "printedName": "tintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvp",
+            "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvp",
+            "moduleName": "BanubaMusicEditorSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvg",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvg",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvs",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvs",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvM",
+                "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV9tintColorSo7UIColorCSgvM",
+                "moduleName": "BanubaMusicEditorSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(type:imageName:selectedImageName:imageEdgeInsets:)",
+            "printedName": "init(type:imageName:selectedImageName:imageEdgeInsets:tintColor:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14011,11 +14856,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV4type9imageName013selectedImageJ00I10EdgeInsetsA2C4TypeO_S2SSgSo06UIEdgeN0VSgtcfc",
-            "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV4type9imageName013selectedImageJ00I10EdgeInsetsA2C4TypeO_S2SSgSo06UIEdgeN0VSgtcfc",
+            "usr": "s:20BanubaMusicEditorSDK19ControlButtonConfigV4type9imageName013selectedImageJ00I10EdgeInsets9tintColorA2C4TypeO_S2SSgSo06UIEdgeN0VSgSo7UIColorCSgtcfc",
+            "mangledName": "$s20BanubaMusicEditorSDK19ControlButtonConfigV4type9imageName013selectedImageJ00I10EdgeInsets9tintColorA2C4TypeO_S2SSgSo06UIEdgeN0VSgSo7UIColorCSgtcfc",
             "moduleName": "BanubaMusicEditorSDK",
             "declAttributes": [
               "AccessControl",
@@ -15559,6 +16419,13 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "BanubaMusicEditorSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -16642,21 +17509,21 @@
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
       "kind": "StringLiteral",
-      "offset": 601,
+      "offset": 621,
       "length": 26,
       "value": "\"BanubaMusicEditorSDK.EditorNavigationController\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
       "kind": "StringLiteral",
-      "offset": 601,
+      "offset": 621,
       "length": 26,
       "value": "\"BanubaMusicEditorSDK.EditorNavigationController\""
     },
     {
       "filePath": "\/Users\/user\/.jenkins\/workspace\/Release iOS modules\/ios\/BanubaMusicEditorSDK\/BanubaMusicEditorSDK\/ViewControllers\/EditorNavigationController.swift",
       "kind": "StringLiteral",
-      "offset": 601,
+      "offset": 621,
       "length": 26,
       "value": "\"BanubaMusicEditorSDK.EditorNavigationController\""
     },
